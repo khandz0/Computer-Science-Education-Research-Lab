@@ -39,10 +39,11 @@ const HeroSection = () => {
                         <Button
                           to="/research"
                           variant="outline"
-                          className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md border-sjsu-gold text-sjsu-gold bg-transparent hover:bg-sjsu-navy md:py-4 md:text-lg md:px-10"
+                          className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-sjsu-gold bg-sjsu-blue hover:bg-sjsu-blue-dark md:py-4 md:text-lg md:px-10"
                         >
                           Our Research
                         </Button>
+                        {/* border-sjsu-gold text-sjsu-gold bg-transparent hover:bg-sjsu-navy md:py-4 md:text-lg md:px-10 */}
                       </div>
                     </div>
                   </div>
@@ -56,7 +57,7 @@ const HeroSection = () => {
         <img
           className="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
           src="https://images.pexels.com/photos/1181677/pexels-photo-1181677.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-          alt="Programming environment"
+          alt="CSE Research Lab Team"
         />
       </div>
     </div>
