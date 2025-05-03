@@ -72,7 +72,7 @@ const AboutPage: React.FC = () => {
         </Container>
       </Section>
 
-      <Section className="bg-sjsu-lightgray">
+      {/*<Section className="bg-sjsu-lightgray">
         <Container>
           <h2 className="text-2xl font-bold text-sjsu-navy mb-6 text-center">
             Our History
@@ -122,7 +122,7 @@ const AboutPage: React.FC = () => {
             </div>
           </div>
         </Container>
-      </Section>
+      </Section>*/}
     </div>
   );
 };
