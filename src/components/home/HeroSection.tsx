@@ -1,5 +1,5 @@
-import { ChevronRight } from 'lucide-react';
-import Button from '../common/Button';
+import { ChevronRight } from "lucide-react";
+import Button from "../common/Button";
 
 const HeroSection = () => {
   return (
@@ -15,16 +15,18 @@ const HeroSection = () => {
                       San José State University
                     </span>
                     <span className="mt-1 block text-white text-4xl tracking-tight font-extrabold sm:text-5xl xl:text-6xl">
-                      Bilingual Programming Research Lab
+                      Computer Science Education Research Lab
                     </span>
                   </h1>
                   <p className="mt-3 text-base text-gray-300 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
-                    Exploring the intersection of natural language and programming languages to create more intuitive, accessible, and powerful software development tools.
+                    Exploring the intersection of natural language and
+                    programming languages to create more intuitive, accessible,
+                    and powerful software development tools.
                   </p>
                   <div className="mt-8 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left lg:mx-0">
                     <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                       <div className="rounded-md shadow">
-                        <Button 
+                        <Button
                           to="/about"
                           variant="primary"
                           className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-sjsu-blue hover:bg-sjsu-blue-dark md:py-4 md:text-lg md:px-10"
@@ -34,7 +36,7 @@ const HeroSection = () => {
                         </Button>
                       </div>
                       <div className="mt-3 sm:mt-0 sm:ml-3">
-                        <Button 
+                        <Button
                           to="/research"
                           variant="outline"
                           className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md border-sjsu-gold text-sjsu-gold bg-transparent hover:bg-sjsu-navy md:py-4 md:text-lg md:px-10"
