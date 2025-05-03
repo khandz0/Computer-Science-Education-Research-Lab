@@ -4,6 +4,7 @@ import Container from "../components/common/Container";
 import Section from "../components/common/Section";
 import { CheckCircle } from "lucide-react";
 import Workshop from "../assets/workshop/workshop1.jpeg";
+import Workshop3 from "../assets/workshop/workshop3.jpeg";
 
 const AboutPage: React.FC = () => {
   const researchFoci = [
@@ -51,14 +52,14 @@ const AboutPage: React.FC = () => {
               </p>
               <img
                 src={Workshop}
-                alt="Research team collaborating"
+                alt="Research team workshop"
                 className="rounded-lg shadow-md w-full h-auto object-cover mb-6"
               />
             </div>
 
             <div>
               <img
-                src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                src={Workshop3}
                 alt="Research team collaborating"
                 className="rounded-lg shadow-md w-full h-auto object-cover mb-6"
               />
