@@ -6,12 +6,12 @@ import { CheckCircle } from "lucide-react";
 
 const AboutPage: React.FC = () => {
   const researchFoci = [
-    "Natural language to code translation and synthesis",
-    "Intelligent programming assistants that understand both natural language and code",
-    "Language-aware software development tools and environments",
-    "Human-computer interaction in programming contexts",
-    "Bilingual programming education and learning systems",
-    "Cross-language code understanding and migration",
+    "Bilingual programming and its impact on learner confidence and attitudes",
+    "AI/ML tools for multilingual code assistance and education",
+    "Designing transfer tutors to help students transition across programming languages (e.g., Scratch to Python, Python to Java)",
+    "Exploring programming knowledge transfer across languages and contexts",
+    "Investigating the role of generative AI (e.g., ChatGPT) in programming education",
+    "Developing inclusive computing education experiences for diverse learners",
   ];
 
   return (
