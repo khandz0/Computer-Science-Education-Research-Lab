@@ -19,9 +19,9 @@ const HeroSection = () => {
                     </span>
                   </h1>
                   <p className="mt-3 text-base text-gray-300 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
-                    Exploring the intersection of natural language and
-                    programming languages to create more intuitive, accessible,
-                    and powerful software development tools.
+                    Exploring AI and ML, Programming Transfer, Programming
+                    Contextualization, Bilingual programming and Inclusive
+                    Computing Education
                   </p>
                   <div className="mt-8 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left lg:mx-0">
                     <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
