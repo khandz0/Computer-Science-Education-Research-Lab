@@ -4,7 +4,7 @@ import FeaturedResearch from "../components/home/FeaturedResearch";
 // import LatestNews from "../components/home/LatestNews";
 import Container from "../components/common/Container";
 import Section from "../components/common/Section";
-import { Users, Newspaper, FileText } from "lucide-react";
+import { Users, Mail, Contact } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const HomePage: React.FC = () => {
@@ -33,6 +33,25 @@ const HomePage: React.FC = () => {
                 <Users className="h-7 w-7" />
               </div>
               <h3 className="text-xl font-semibold text-sjsu-navy mb-2">
+                About Us
+              </h3>
+              <p className="text-gray-600 mb-4">
+                Learn more about our mission, vision, and the research we
+                conduct.
+              </p>
+              <Link
+                to="/about"
+                className="font-medium text-sjsu-blue hover:text-sjsu-gold transition-colors"
+              >
+                Learn More
+              </Link>
+            </div>
+
+            <div className="text-center p-6">
+              <div className="mx-auto flex items-center justify-center h-14 w-14 rounded-full bg-sjsu-blue text-white mb-4">
+                <Contact className="h-7 w-7" />
+              </div>
+              <h3 className="text-xl font-semibold text-sjsu-navy mb-2">
                 Our Team
               </h3>
               <p className="text-gray-600 mb-4">
@@ -47,6 +66,24 @@ const HomePage: React.FC = () => {
               </Link>
             </div>
 
+            <div className="text-center p-6">
+              <div className="mx-auto flex items-center justify-center h-14 w-14 rounded-full bg-sjsu-blue text-white mb-4">
+                <Mail className="h-7 w-7" />
+              </div>
+              <h3 className="text-xl font-semibold text-sjsu-navy mb-2">
+                Contact Us
+              </h3>
+              <p className="text-gray-600 mb-4">
+                Get in touch with our team for inquiries, collaborations, or lab
+                visits at San José State.
+              </p>
+              <Link
+                to="/contact"
+                className="font-medium text-sjsu-blue hover:text-sjsu-gold transition-colors"
+              >
+                Contact the Lab
+              </Link>
+            </div>
             {/* <div className="text-center p-6">
               <div className="mx-auto flex items-center justify-center h-14 w-14 rounded-full bg-sjsu-blue text-white mb-4">
                 <FileText className="h-7 w-7" />
