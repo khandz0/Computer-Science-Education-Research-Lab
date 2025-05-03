@@ -29,23 +29,24 @@ const AboutPage: React.FC = () => {
                 Our Mission
               </h2>
               <p className="text-gray-600 mb-6 leading-relaxed">
-                The Bilingual Programming Research Lab (BPRL) at San José State
-                University is dedicated to revolutionizing how humans interact
-                with programming languages. We believe that the future of
-                programming lies at the intersection of natural language and
-                formal programming languages.
+                The Computer Science Education Research Lab at San José State
+                University investigates how students learn to transfer
+                programming knowledge across languages and contexts. We aim to
+                design tools, learning experiences, and empirical studies that
+                promote inclusive and effective computing education.
               </p>
               <p className="text-gray-600 mb-6 leading-relaxed">
-                Our mission is to develop innovative tools, techniques, and
-                theories that make programming more accessible, intuitive, and
-                powerful through bilingual approaches that leverage both natural
-                language understanding and formal language semantics.
+                Our work focuses on programming contextualization, bilingual
+                programming, and the integration of AI/ML in computing
+                education. We strive to support diverse learners by making
+                programming more accessible and meaningful through
+                language-aware technologies and culturally responsive
+                instruction.
               </p>
               <p className="text-gray-600 leading-relaxed">
-                Through interdisciplinary collaboration across computer science,
-                linguistics, education, and human-computer interaction, we aim
-                to break down barriers between human expression and computer
-                execution.
+                Led by a collaborative team of students and faculty, we are
+                committed to research that values curiosity, inclusion, and
+                real-world impact.
               </p>
             </div>
 
