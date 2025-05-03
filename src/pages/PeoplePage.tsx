@@ -51,7 +51,7 @@ const PeoplePage: React.FC = () => {
       image: ThienProfile,
       email: "thienkhang.kieu@sjsu.edu",
       linkedin: "https://www.linkedin.com/in/thienkhangkieu2606/",
-      github: "https://github.com/khandz0",
+      github: "khandz0",
     },
   ];
 
