@@ -1,56 +1,66 @@
-import React from 'react';
-import HeroSection from '../components/home/HeroSection';
-import FeaturedResearch from '../components/home/FeaturedResearch';
-import LatestNews from '../components/home/LatestNews';
-import Container from '../components/common/Container';
-import Section from '../components/common/Section';
-import { Users, Newspaper, FileText } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import HeroSection from "../components/home/HeroSection";
+import FeaturedResearch from "../components/home/FeaturedResearch";
+// import LatestNews from "../components/home/LatestNews";
+import Container from "../components/common/Container";
+import Section from "../components/common/Section";
+import { Users, Newspaper, FileText } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const HomePage: React.FC = () => {
   return (
     <div className="animate-fade-in">
       <HeroSection />
-      
+
       <Section className="bg-white py-20">
         <Container>
           <div className="max-w-3xl mx-auto text-center mb-12">
-            <h2 className="text-3xl font-bold text-sjsu-navy mb-4">Welcome to the Bilingual Programming Research Lab</h2>
+            <h2 className="text-3xl font-bold text-sjsu-navy mb-4">
+              Welcome to the Bilingual Programming Research Lab
+            </h2>
             <p className="text-gray-600 leading-relaxed">
-              Our laboratory focuses on the intersection of natural language processing and programming languages, 
-              exploring how bilingual approaches to software development can make programming more intuitive, 
-              accessible, and powerful for developers of all backgrounds.
+              Our laboratory focuses on the intersection of natural language
+              processing and programming languages, exploring how bilingual
+              approaches to software development can make programming more
+              intuitive, accessible, and powerful for developers of all
+              backgrounds.
             </p>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
             <div className="text-center p-6">
               <div className="mx-auto flex items-center justify-center h-14 w-14 rounded-full bg-sjsu-blue text-white mb-4">
                 <Users className="h-7 w-7" />
               </div>
-              <h3 className="text-xl font-semibold text-sjsu-navy mb-2">Our Team</h3>
+              <h3 className="text-xl font-semibold text-sjsu-navy mb-2">
+                Our Team
+              </h3>
               <p className="text-gray-600 mb-4">
-                Meet our diverse team of researchers, students, and collaborators working to advance the field.
+                Meet our diverse team of researchers, students, and
+                collaborators working to advance the field.
               </p>
-              <Link to="/people" className="font-medium text-sjsu-blue hover:text-sjsu-gold transition-colors">
+              <Link
+                to="/people"
+                className="font-medium text-sjsu-blue hover:text-sjsu-gold transition-colors"
+              >
                 Meet the Team
               </Link>
             </div>
-            
-            <div className="text-center p-6">
+
+            {/* <div className="text-center p-6">
               <div className="mx-auto flex items-center justify-center h-14 w-14 rounded-full bg-sjsu-blue text-white mb-4">
                 <FileText className="h-7 w-7" />
               </div>
-              <h3 className="text-xl font-semibold text-sjsu-navy mb-2">Publications</h3>
+              <h3 className="text-xl font-semibold text-sjsu-navy mb-2">Publication</h3>
               <p className="text-gray-600 mb-4">
                 Explore our peer-reviewed research papers, conference presentations, and technical reports.
               </p>
               <Link to="/publications" className="font-medium text-sjsu-blue hover:text-sjsu-gold transition-colors">
                 Browse Publications
               </Link>
-            </div>
-            
-            <div className="text-center p-6">
+            </div> */}
+
+            {/* <div className="text-center p-6">
               <div className="mx-auto flex items-center justify-center h-14 w-14 rounded-full bg-sjsu-blue text-white mb-4">
                 <Newspaper className="h-7 w-7" />
               </div>
@@ -61,13 +71,13 @@ const HomePage: React.FC = () => {
               <Link to="/news" className="font-medium text-sjsu-blue hover:text-sjsu-gold transition-colors">
                 Latest News
               </Link>
-            </div>
+            </div> */}
           </div>
         </Container>
       </Section>
-      
+
       <FeaturedResearch />
-      <LatestNews />
+      {/* <LatestNews /> */}
     </div>
   );
 };
