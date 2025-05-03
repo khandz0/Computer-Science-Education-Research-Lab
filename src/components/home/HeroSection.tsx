@@ -1,5 +1,6 @@
 import { ChevronRight } from "lucide-react";
 import Button from "../common/Button";
+import ResearchPic from "../../assets/researchday/researchday.jpg";
 
 const HeroSection = () => {
   return (
@@ -56,7 +57,7 @@ const HeroSection = () => {
       <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
         <img
           className="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
-          src="https://images.pexels.com/photos/1181677/pexels-photo-1181677.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          src={ResearchPic}
           alt="CSE Research Lab Team"
         />
       </div>
