@@ -12,7 +12,7 @@ interface Person {
   bio: string;
   image: string;
   email?: string;
-  website?: string;
+  linkedin?: string;
   github?: string;
   twitter?: string;
 }
@@ -28,8 +28,7 @@ const PeoplePage: React.FC = () => {
       image:
         "https://images.pexels.com/photos/5212317/pexels-photo-5212317.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       email: "ethel.tshukudu@sjsu.edu",
-      website: "https://example.edu/~rodriguez",
-      github: "mrodriguez",
+      linkedin: "https://example.edu/~rodriguez",
     },
     {
       id: 2,
@@ -40,7 +39,7 @@ const PeoplePage: React.FC = () => {
       image:
         "https://images.pexels.com/photos/5684734/pexels-photo-5684734.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       email: "james.chen@example.edu",
-      website: "https://example.edu/~chen",
+      linkedin: "https://example.edu/~chen",
       twitter: "jameschen_hci",
     },
     {
@@ -52,6 +51,7 @@ const PeoplePage: React.FC = () => {
       image:
         "https://images.pexels.com/photos/3796217/pexels-photo-3796217.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       email: "aisha.patel@example.edu",
+      linkedin: "https://example.edu/~patel",
       github: "apatel",
     },
   ];
@@ -111,13 +111,13 @@ const PeoplePage: React.FC = () => {
                             <Mail className="h-5 w-5" />
                           </a>
                         )}
-                        {person.website && (
+                        {person.linkedin && (
                           <a
-                            href={person.website}
+                            href={person.linkedin}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-gray-500 hover:text-sjsu-blue transition-colors"
-                            aria-label={`Visit ${person.name}'s website`}
+                            aria-label={`Visit ${person.name}'s linkedin`}
                           >
                             <ExternalLink className="h-5 w-5" />
                           </a>
