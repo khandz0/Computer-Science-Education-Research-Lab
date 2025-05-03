@@ -2,7 +2,8 @@ import React from "react";
 import PageHeader from "../components/common/PageHeader";
 import Container from "../components/common/Container";
 import Section from "../components/common/Section";
-import { Mail, ExternalLink, Github, Twitter } from "lucide-react";
+import { Mail, Github, Twitter, Linkedin } from "lucide-react";
+import ThienProfile from "../assets/profiles/tkkprofile.png";
 
 interface Person {
   id: number;
@@ -22,13 +23,12 @@ const PeoplePage: React.FC = () => {
     {
       id: 1,
       name: "Dr. Ethel Tshukudu",
-      title: "Lab Director",
+      title: "Head Professor",
       category: "faculty",
       bio: "Dr. Rodriguez specializes in natural language processing and programming language design. She leads the lab's research on bilingual programming environments.",
-      image:
-        "https://images.pexels.com/photos/5212317/pexels-photo-5212317.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      image: "",
       email: "ethel.tshukudu@sjsu.edu",
-      linkedin: "https://example.edu/~rodriguez",
+      linkedin: "https://www.linkedin.com/in/dr-ethel-tshukudu-b9965338/",
     },
     {
       id: 2,
@@ -39,7 +39,7 @@ const PeoplePage: React.FC = () => {
       image:
         "https://images.pexels.com/photos/5684734/pexels-photo-5684734.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       email: "james.chen@example.edu",
-      linkedin: "https://example.edu/~chen",
+      linkedin: "https://www.linkedin.com/in/nshah1010/",
       twitter: "jameschen_hci",
     },
     {
@@ -48,11 +48,10 @@ const PeoplePage: React.FC = () => {
       title: "Student Researcher",
       category: "undergrad",
       bio: "Dr. Patel specializes in educational technology and novice programmer support systems. She studies how bilingual programming tools can improve learning outcomes.",
-      image:
-        "https://images.pexels.com/photos/3796217/pexels-photo-3796217.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      email: "aisha.patel@example.edu",
-      linkedin: "https://example.edu/~patel",
-      github: "apatel",
+      image: ThienProfile,
+      email: "thienkhang.kieu@sjsu.edu",
+      linkedin: "https://www.linkedin.com/in/thienkhangkieu2606/",
+      github: "https://github.com/khandz0",
     },
   ];
 
@@ -119,7 +118,7 @@ const PeoplePage: React.FC = () => {
                             className="text-gray-500 hover:text-sjsu-blue transition-colors"
                             aria-label={`Visit ${person.name}'s linkedin`}
                           >
-                            <ExternalLink className="h-5 w-5" />
+                            <Linkedin className="h-5 w-5" />
                           </a>
                         )}
                         {person.github && (
