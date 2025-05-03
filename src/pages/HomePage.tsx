@@ -16,14 +16,18 @@ const HomePage: React.FC = () => {
         <Container>
           <div className="max-w-3xl mx-auto text-center mb-12">
             <h2 className="text-3xl font-bold text-sjsu-navy mb-4">
-              Welcome to the Bilingual Programming Research Lab
+              Welcome to the Computer Science Education Research Lab
             </h2>
             <p className="text-gray-600 leading-relaxed">
-              Our laboratory focuses on the intersection of natural language
-              processing and programming languages, exploring how bilingual
-              approaches to software development can make programming more
-              intuitive, accessible, and powerful for developers of all
-              backgrounds.
+              We are a collaborative group of undergraduate and graduate student
+              researchers at San José State University, led by Dr. Ethel
+              Tshukudu, Assistant Professor of Computer Science and Science
+              Education. Our lab values curiosity, inclusion, and practical
+              impact. We are dedicated to exploring the intersection of computer
+              science and education, with a focus on enhancing learning
+              experiences through innovative research. Our work encompasses a
+              range of topics, including AI and ML, programming transfer,
+              bilingual programming, and inclusive computing education.
             </p>
           </div>
 
