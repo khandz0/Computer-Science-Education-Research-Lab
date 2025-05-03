@@ -47,7 +47,7 @@ const PeoplePage: React.FC = () => {
       name: "Thien Khang Kieu",
       title: "Student Researcher",
       category: "undergrad",
-      bio: "Dr. Patel specializes in educational technology and novice programmer support systems. She studies how bilingual programming tools can improve learning outcomes.",
+      bio: "Thien is an undergraduate student at San José State University with a strong interest in computer science education, programming tools, and inclusive learning. His work focuses on supporting programming transfer and AI-enhanced learning through literature reviews, experimental design, and software development.",
       image: ThienProfile,
       email: "thienkhang.kieu@sjsu.edu",
       linkedin: "https://www.linkedin.com/in/thienkhangkieu2606/",
