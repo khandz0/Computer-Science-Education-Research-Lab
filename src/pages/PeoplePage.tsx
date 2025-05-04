@@ -4,6 +4,13 @@ import Container from "../components/common/Container";
 import Section from "../components/common/Section";
 import { Mail, Github, Twitter, Linkedin } from "lucide-react";
 import ThienProfile from "../assets/profiles/tkkprofile.png";
+import EthelProfile from "../assets/profiles/ethel_image.jpeg";
+import NeelProfile from "../assets/profiles/Neel_image.png";
+import HarshithaProfile from "../assets/profiles/Harshitha.jpeg";
+import NishantProfile from "../assets/profiles/Nishant_img.jpeg";
+import LeeqaProfile from "../assets/profiles/leeqa_img.jpeg";
+import AaravProfile from "../assets/profiles/AaravGhai.jpg";
+import YusufProfile from "../assets/profiles/yusuf_img.jpeg";
 
 interface Person {
   id: number;
@@ -25,8 +32,8 @@ const PeoplePage: React.FC = () => {
       name: "Dr. Ethel Tshukudu",
       title: "Head Professor",
       category: "faculty",
-      bio: "Dr. Rodriguez specializes in natural language processing and programming language design. She leads the lab's research on bilingual programming environments.",
-      image: "",
+      bio: "Dr. Ethel Tshukudu is a passionate educator and researcher dedicated to inclusive computer science education. Her work focuses on making programming accessible through innovative, equitable learning methods.",
+      image: EthelProfile,
       email: "ethel.tshukudu@sjsu.edu",
       linkedin: "https://www.linkedin.com/in/dr-ethel-tshukudu-b9965338/",
     },
@@ -35,12 +42,11 @@ const PeoplePage: React.FC = () => {
       name: "Neel Shah",
       title: "Student Researcher",
       category: "masters",
-      bio: "Dr. Chen's research focuses on human-computer interaction and code comprehension. He leads projects on visual programming languages and code visualization.",
-      image:
-        "https://images.pexels.com/photos/5684734/pexels-photo-5684734.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      email: "james.chen@example.edu",
+      bio: "Neel is a passionate master's student with a strong interest in innovative learning methods, computer science education, programming tools, and inclusive learning environments.",
+      image: NeelProfile,
+      email: "neelasheshbhai.shah@sjsu.edu",
       linkedin: "https://www.linkedin.com/in/nshah1010/",
-      twitter: "jameschen_hci",
+      github: "SpartaNeel1010",
     },
     {
       id: 3,
@@ -52,6 +58,57 @@ const PeoplePage: React.FC = () => {
       email: "thienkhang.kieu@sjsu.edu",
       linkedin: "https://www.linkedin.com/in/thienkhangkieu2606/",
       github: "khandz0",
+    },
+    {
+      id: 4,
+      name: "Harshitha Venkateswaran",
+      title: "Student Researcher",
+      category: "undergrad",
+      bio: "Harshitha is a passionate undergraduate researcher focusing on computer science education and innovative learning methods.",
+      image: HarshithaProfile,
+      email: "harshitha.venkateswaran@sjsu.edu",
+      linkedin: "https://www.linkedin.com/in/harshitha-venkateswaran-121083283/",
+    },
+    {
+      id: 5,
+      name: "Nishant Nagesh",
+      title: "Student Researcher",
+      category: "undergrad",
+      bio: "Nishant is a masters student researcher with interests in educational technology and programming language learning.",
+      image: NishantProfile,
+      email: "nishanth.nagesh@sjsu.edu",
+      github: "nishant",
+      linkedin:"https://www.linkedin.com/in/nishanth-nagesh-79753a276/"
+    },
+    {
+      id: 6,
+      name: "Leeqa Deeb",
+      title: "Student Researcher",
+      category: "undergrad",
+      bio: "Leeqa is an undergraduate researcher working on projects related to computer science education and learning tools.",
+      image: LeeqaProfile,
+      email: "leeqa.deeb@sjsu.edu",
+      linkedin: "https://www.linkedin.com/in/leqaa-deeb/",
+    }, 
+    {
+      id: 7,
+      name: "Aarav Ghai",
+      title: "Student Researcher",
+      category: "undergrad",
+      bio: "Aarav is an undergraduate researcher with interests in computer science education and educational tools development.",
+      image: AaravProfile,
+      email: "aaravmanav.ghai@sjsu.edu",
+      linkedin: "https://www.linkedin.com/in/ghaiaarav/",
+    },
+    {
+      id: 8,
+      name: "Yusuf Gadelrab",
+      title: "Student Researcher",
+      category: "undergrad",
+      bio: "Yusuf is an undergraduate researcher focused on advancing computer science education through innovative teaching methodologies and tools.",
+      image: YusufProfile,
+      email: "yusuf.gadelrab@sjsu.edu",
+      linkedin :"https://www.linkedin.com/in/yusuf-gadelrab-76246b221/"
     },
   ];
 
