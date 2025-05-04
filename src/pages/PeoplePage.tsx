@@ -53,7 +53,7 @@ const PeoplePage: React.FC = () => {
       name: "Thien Khang Kieu",
       title: "Student Researcher",
       category: "undergrad",
-      bio: "Thien is an undergraduate student at San José State University with a strong interest in computer science education, programming tools, and inclusive learning. His work focuses on supporting programming transfer and AI-enhanced learning through literature reviews, experimental design, and software development.",
+      bio: "Thien is an undergraduate student at San José State University with a strong interest in computer science education, programming tools, and inclusive learning.",
       image: ThienProfile,
       email: "thienkhang.kieu@sjsu.edu",
       linkedin: "https://www.linkedin.com/in/thienkhangkieu2606/",
@@ -67,7 +67,8 @@ const PeoplePage: React.FC = () => {
       bio: "Harshitha is a passionate undergraduate researcher focusing on computer science education and innovative learning methods.",
       image: HarshithaProfile,
       email: "harshitha.venkateswaran@sjsu.edu",
-      linkedin: "https://www.linkedin.com/in/harshitha-venkateswaran-121083283/",
+      linkedin:
+        "https://www.linkedin.com/in/harshitha-venkateswaran-121083283/",
     },
     {
       id: 5,
@@ -78,7 +79,7 @@ const PeoplePage: React.FC = () => {
       image: NishantProfile,
       email: "nishanth.nagesh@sjsu.edu",
       github: "nishant",
-      linkedin:"https://www.linkedin.com/in/nishanth-nagesh-79753a276/"
+      linkedin: "https://www.linkedin.com/in/nishanth-nagesh-79753a276/",
     },
     {
       id: 6,
@@ -89,7 +90,7 @@ const PeoplePage: React.FC = () => {
       image: LeeqaProfile,
       email: "leeqa.deeb@sjsu.edu",
       linkedin: "https://www.linkedin.com/in/leqaa-deeb/",
-    }, 
+    },
     {
       id: 7,
       name: "Aarav Ghai",
@@ -108,7 +109,7 @@ const PeoplePage: React.FC = () => {
       bio: "Yusuf is an undergraduate researcher focused on advancing computer science education through innovative teaching methodologies and tools.",
       image: YusufProfile,
       email: "yusuf.gadelrab@sjsu.edu",
-      linkedin :"https://www.linkedin.com/in/yusuf-gadelrab-76246b221/"
+      linkedin: "https://www.linkedin.com/in/yusuf-gadelrab-76246b221/",
     },
   ];
 
