@@ -31,7 +31,7 @@ const Navbar = () => {
             <NavLink to="/" className="flex items-center" onClick={closeMenu}>
               <Beaker className="h-8 w-8 text-sjsu-blue" />
               <span className="ml-2 text-xl font-semibold text-sjsu-blue">
-                CSE Lab
+                CSE Research Lab
               </span>
             </NavLink>
           </div>
