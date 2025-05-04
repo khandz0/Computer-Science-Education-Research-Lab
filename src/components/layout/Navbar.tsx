@@ -17,7 +17,8 @@ const Navbar = () => {
     { name: "Home", path: "/" },
     { name: "About", path: "/about" },
     { name: "People", path: "/people" },
-    { name: "Research", path: "/research" },
+    // { name: "Research", path: "/research" },
+    { name: "Projects", path: "/projects" },
     // { name: "Publications", path: "/publications" },
     // { name: "News", path: "/news" },
     { name: "Contact", path: "/contact" },
@@ -55,8 +56,9 @@ const Navbar = () => {
           <div className="flex md:hidden items-center">
             <button
               onClick={toggleMenu}
+              buttonType="button"
               className="inline-flex items-center justify-center p-2 rounded-md text-sjsu-blue hover:text-sjsu-blue-dark hover:bg-sjsu-lightgray focus:outline-none"
-              aria-expanded={isOpen}
+              aria-expanded={isOpen ? "true" : "false"}
             >
               <span className="sr-only">Open main menu</span>
               {isOpen ? (
