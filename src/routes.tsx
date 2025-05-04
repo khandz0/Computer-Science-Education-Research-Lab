@@ -6,6 +6,7 @@ import ResearchPage from './pages/ResearchPage';
 import PublicationsPage from './pages/PublicationsPage';
 import NewsPage from './pages/NewsPage';
 import ContactPage from './pages/ContactPage';
+import BilingualWorkshopPage from './pages/BilingualWorkshopPage';
 
 const AppRoutes = () => {
   return (
@@ -14,6 +15,7 @@ const AppRoutes = () => {
       <Route path="/about" element={<AboutPage />} />
       <Route path="/people" element={<PeoplePage />} />
       <Route path="/research" element={<ResearchPage />} />
+      <Route path="/projects" element={<BilingualWorkshopPage />} />
       <Route path="/publications" element={<PublicationsPage />} />
       <Route path="/news" element={<NewsPage />} />
       <Route path="/contact" element={<ContactPage />} />
