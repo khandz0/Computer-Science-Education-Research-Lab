@@ -56,7 +56,7 @@ const Navbar = () => {
           <div className="flex md:hidden items-center">
             <button
               onClick={toggleMenu}
-              buttonType="button"
+              type="button"
               className="inline-flex items-center justify-center p-2 rounded-md text-sjsu-blue hover:text-sjsu-blue-dark hover:bg-sjsu-lightgray focus:outline-none"
               aria-expanded={isOpen ? "true" : "false"}
             >
