@@ -43,15 +43,15 @@ const ContactPage: React.FC = () => {
 
     try {
       await emailjs.send(
-        "YOUR_SERVICE_ID",
-        "YOUR_TEMPLATE_ID",
+        "csedresearchSJSUService",
+        "csedresearchSJSUTemplate",
         {
           from_name: formData.name,
           from_email: formData.email,
           subject: formData.subject,
           message: formData.message,
         },
-        "YOUR_PUBLIC_KEY"
+        "HEyS9dW25L774R9Ts"
       );
 
       setFormStatus({
