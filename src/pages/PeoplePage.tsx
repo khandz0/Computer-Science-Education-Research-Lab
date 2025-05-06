@@ -217,13 +217,12 @@ const PeoplePage: React.FC = () => {
             </h3>
             <p className="text-gray-600 mb-6">
               We are always looking for motivated students and researchers
-              interested in bilingual programming, natural language processing,
-              and human-computer interaction. If you are interested in joining
-              our lab, please contact the lab director with your CV and a brief
-              statement of research interests.
+              interested in Computer Science Education Research. If you are
+              interested in joining our lab, please contact the lab director
+              with your CV and a brief statement of research interests.
             </p>
             <a
-              href="mailto:contact@bprl.edu"
+              href="mailto:csedresearchsjsu@gmail.com"
               className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-sjsu-blue hover:bg-sjsu-blue-dark"
             >
               Contact Us About Opportunities
