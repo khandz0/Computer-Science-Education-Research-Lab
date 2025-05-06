@@ -3,7 +3,8 @@ import PageHeader from "../components/common/PageHeader";
 import Container from "../components/common/Container";
 import Section from "../components/common/Section";
 import Button from "../components/common/Button";
-import { Mail, MapPin, Phone, Send, AlertCircle } from "lucide-react";
+import { Mail, MapPin, Send, AlertCircle } from "lucide-react";
+import emailjs from "@emailjs/browser";
 
 const ContactPage: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -28,34 +29,50 @@ const ContactPage: React.FC = () => {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    // Basic validation
     if (!formData.name || !formData.email || !formData.message) {
       setFormStatus({
         submitted: true,
         success: false,
-        message: "Please fill out all required fields",
+        message: "Please fill out all required fields.",
       });
       return;
     }
 
-    // Simulate form submission
-    setFormStatus({
-      submitted: true,
-      success: true,
-      message:
-        "Your message has been sent successfully! We will get back to you soon.",
-    });
+    try {
+      await emailjs.send(
+        "YOUR_SERVICE_ID",
+        "YOUR_TEMPLATE_ID",
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+        },
+        "YOUR_PUBLIC_KEY"
+      );
 
-    // Reset form after successful submission
-    setFormData({
-      name: "",
-      email: "",
-      subject: "",
-      message: "",
-    });
+      setFormStatus({
+        submitted: true,
+        success: true,
+        message: "Your message has been sent successfully!",
+      });
+
+      setFormData({
+        name: "",
+        email: "",
+        subject: "",
+        message: "",
+      });
+    } catch (error) {
+      setFormStatus({
+        submitted: true,
+        success: false,
+        message: "Failed to send message. Please try again later.",
+      });
+    }
   };
 
   return (
@@ -83,19 +100,19 @@ const ContactPage: React.FC = () => {
                         href="mailto:contact@bprl.edu"
                         className="hover:text-sjsu-blue"
                       >
-                        contact@bprl.edu
+                        csedresearchsjsu@gmail.com
                       </a>
                     </p>
                   </div>
                 </div>
 
-                <div className="flex items-start">
+                {/* <div className="flex items-start">
                   <Phone className="h-6 w-6 text-sjsu-gold mr-4 flex-shrink-0 mt-1" />
                   <div>
                     <h3 className="font-semibold text-sjsu-navy mb-1">Phone</h3>
                     <p className="text-gray-600">(408) 123-4567</p>
                   </div>
-                </div>
+                </div> */}
 
                 <div className="flex items-start">
                   <MapPin className="h-6 w-6 text-sjsu-gold mr-4 flex-shrink-0 mt-1" />
@@ -104,8 +121,8 @@ const ContactPage: React.FC = () => {
                       Address
                     </h3>
                     <p className="text-gray-600">
-                      Computer Science Education Research Lab
-                      <br />
+                      {/* Computer Science Education Research Lab
+                      <br /> */}
                       San José State University
                       <br />
                       1 Washington Square
@@ -116,7 +133,7 @@ const ContactPage: React.FC = () => {
                 </div>
               </div>
 
-              <div className="mt-8">
+              {/* <div className="mt-8">
                 <h3 className="text-xl font-semibold text-sjsu-navy mb-4">
                   Office Hours
                 </h3>
@@ -130,9 +147,9 @@ const ContactPage: React.FC = () => {
                 <p className="text-gray-600 mt-2 italic">
                   Note: Please email in advance to schedule an appointment.
                 </p>
-              </div>
+              </div> */}
 
-              <div className="mt-8">
+              {/* <div className="mt-8">
                 <h3 className="text-xl font-semibold text-sjsu-navy mb-4">
                   Campus Map
                 </h3>
@@ -147,7 +164,7 @@ const ContactPage: React.FC = () => {
                   Our lab is located in the Engineering Building (ENG), Room
                   281.
                 </p>
-              </div>
+              </div> */}
             </div>
 
             <div>
