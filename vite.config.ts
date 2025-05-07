@@ -8,5 +8,5 @@ export default defineConfig({
     exclude: ['lucide-react'],
   },
   assetsInclude: ['**/*.JPG'],
-  base: '/',
+  base: '/Computer-Science-Education-Research-Lab',
 });
