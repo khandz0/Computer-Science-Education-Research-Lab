@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import PageHeader from "../components/common/PageHeader";
 import Container from "../components/common/Container";
 import Section from "../components/common/Section";
@@ -364,12 +365,12 @@ const BilingualWorkshopPage: React.FC = () => {
               </ul>
 
               <div className="text-center">
-                <a
-                  href="/contact"
+                <Link
+                  to="/contact"
                   className="inline-block px-6 py-3 bg-sjsu-blue text-white font-medium rounded-md hover:bg-sjsu-blue-dark transition"
                 >
                   We're looking for more schools — Contact Us
-                </a>
+                </Link>
               </div>
             </div>
           </div>
