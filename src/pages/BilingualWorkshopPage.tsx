@@ -335,9 +335,9 @@ const BilingualWorkshopPage: React.FC = () => {
                 members volunteer in <b>AP Computer Science</b> classrooms to
                 support and mentor students in coding. We are currently looking
                 to expand this initiative by{" "}
-                <b>partnering with other high schools</b>
-                that are interested in bringing university mentors into their
-                computer science classrooms.
+                <b>partnering with other high schools</b> that are interested in
+                bringing university mentors into their computer science
+                classrooms.
               </p>
               <p className="text-gray-600 mb-4">
                 This initiative promotes early exposure to computer science,
