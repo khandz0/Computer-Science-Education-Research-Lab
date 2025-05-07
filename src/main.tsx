@@ -1,10 +1,12 @@
-import { StrictMode } from 'react';
-import { createRoot } from 'react-dom/client';
-import App from './App.tsx';
-import './index.css';
+import { BrowserRouter } from "react-router-dom";
+import AppRoutes from "./routes";
 
-createRoot(document.getElementById('root')!).render(
-  <StrictMode>
-    <App />
-  </StrictMode>
-);
+function App() {
+  return (
+    <BrowserRouter basename="/Computer-Science-Education-Research-Lab">
+      <AppRoutes />
+    </BrowserRouter>
+  );
+}
+
+export default App;
