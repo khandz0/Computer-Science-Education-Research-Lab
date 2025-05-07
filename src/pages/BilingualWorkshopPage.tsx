@@ -321,6 +321,59 @@ const BilingualWorkshopPage: React.FC = () => {
             </div>
           </div>
         </Section>
+        <Section title="Code Club Facilitator: Community Engagement Through Computing">
+          <div className="max-w-4xl mx-auto">
+            <div className="bg-sjsu-lightgray rounded-lg p-6">
+              <h3 className="text-xl font-bold text-sjsu-navy mb-3">
+                Overview
+              </h3>
+              <p className="text-gray-600 mb-4">
+                Since September 2024, our lab has been actively involved in a
+                community outreach initiative called{" "}
+                <span className="font-medium">Code Club Facilitator</span>. In
+                partnership with <b>Yerba Buena High School</b>, our team
+                members volunteer in <b>AP Computer Science</b> classrooms to
+                support and mentor students in coding.
+              </p>
+              <p className="text-gray-600 mb-4">
+                This initiative promotes early exposure to computer science,
+                fosters peer-to-peer learning, and encourages students from
+                underrepresented backgrounds to pursue computing education. By
+                embedding university researchers directly into high school
+                environments, we bridge the gap between K-12 and higher
+                education.
+              </p>
+
+              <h3 className="text-xl font-bold text-sjsu-navy mb-3">Impact</h3>
+              <ul className="list-disc pl-6 space-y-2 text-gray-600 mb-6">
+                <li>
+                  8+ months of weekly mentoring sessions since September 2024
+                </li>
+                <li>
+                  Direct classroom support for high school Computer Science
+                  students
+                </li>
+                <li>
+                  Encouraged student participation in projects, labs, and exam
+                  preparation
+                </li>
+                <li>
+                  Expanded computing access to students through mentorship and
+                  example
+                </li>
+              </ul>
+
+              <div className="text-center">
+                <a
+                  href="/contact"
+                  className="inline-block px-6 py-3 bg-sjsu-blue text-white font-medium rounded-md hover:bg-sjsu-blue-dark transition"
+                >
+                  We're looking for more schools — Contact Us
+                </a>
+              </div>
+            </div>
+          </div>
+        </Section>
       </Container>
     </div>
   );
