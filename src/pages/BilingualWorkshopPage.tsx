@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import PageHeader from "../components/common/PageHeader";
 import Container from "../components/common/Container";
 import Section from "../components/common/Section";
@@ -334,7 +333,11 @@ const BilingualWorkshopPage: React.FC = () => {
                 <span className="font-medium">Code Club Facilitator</span>. In
                 partnership with <b>Yerba Buena High School</b>, our team
                 members volunteer in <b>AP Computer Science</b> classrooms to
-                support and mentor students in coding.
+                support and mentor students in coding. We are currently looking
+                to expand this initiative by{" "}
+                <b>partnering with other high schools</b>
+                that are interested in bringing university mentors into their
+                computer science classrooms.
               </p>
               <p className="text-gray-600 mb-4">
                 This initiative promotes early exposure to computer science,
@@ -363,15 +366,6 @@ const BilingualWorkshopPage: React.FC = () => {
                   example
                 </li>
               </ul>
-
-              <div className="text-center">
-                <Link
-                  to="/contact"
-                  className="inline-block px-6 py-3 bg-sjsu-blue text-white font-medium rounded-md hover:bg-sjsu-blue-dark transition"
-                >
-                  We're looking for more schools — Contact Us
-                </Link>
-              </div>
             </div>
           </div>
         </Section>
