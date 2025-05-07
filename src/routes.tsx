@@ -11,10 +11,7 @@ import BilingualWorkshopPage from "./pages/BilingualWorkshopPage";
 const AppRoutes = () => {
   return (
     <Routes>
-      <Route
-        path="/Computer-Science-Education-Research-Lab"
-        element={<HomePage />}
-      />
+      <Route path="/" element={<HomePage />} />
       <Route path="/about" element={<AboutPage />} />
       <Route path="/people" element={<PeoplePage />} />
       <Route path="/research" element={<ResearchPage />} />
