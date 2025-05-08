@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import PageHeader from "../components/common/PageHeader";
 import Container from "../components/common/Container";
 import Section from "../components/common/Section";
@@ -231,12 +232,12 @@ const PeoplePage: React.FC = () => {
               interested in joining our lab, please contact the lab director
               with your CV and a brief statement of research interests.
             </p>
-            <a
-              href="mailto:csedresearchsjsu@gmail.com"
+            <Link
+              to="/contact"
               className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-sjsu-blue hover:bg-sjsu-blue-dark"
             >
               Contact Us About Opportunities
-            </a>
+            </Link>
           </div>
         </Section>
       </Container>
