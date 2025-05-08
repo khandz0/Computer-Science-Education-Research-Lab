@@ -36,7 +36,7 @@ const HeroSection = () => {
               <ChevronRight className="ml-2 h-5 w-5" />
             </Button>
             <Button
-              to="/research"
+              to="/projects"
               variant="outline"
               className="flex items-center justify-center px-8 py-3 text-base font-medium rounded-md text-sjsu-gold bg-sjsu-blue hover:bg-sjsu-blue-dark"
             >
