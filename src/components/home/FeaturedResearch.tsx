@@ -22,11 +22,10 @@ const FeaturedResearch = () => {
     },
     {
       id: 3,
-      title: "Language-Aware Programming Tools",
+      title: "Artificial Intelligence and Machine Learning in Education",
       description:
-        "Building IDEs and code editors that understand the semantics of both natural language comments and programming language constructs.",
-      image:
-        "https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "Exploring how AI and ML can revolutionize education by creating intelligent tools, such as IDEs and code editors, that enhance learning experiences and support educators.",
+      image: "",
     },
   ];
 
