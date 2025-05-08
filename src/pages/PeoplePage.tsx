@@ -11,6 +11,7 @@ import NishantProfile from "../assets/profiles/Nishant_img.jpeg";
 import LeeqaProfile from "../assets/profiles/leeqa_img.jpeg";
 import AaravProfile from "../assets/profiles/AaravGhai.jpg";
 import YusufProfile from "../assets/profiles/yusuf_img.jpeg";
+import PurujitProfile from "../assets/profiles/PurujitProfile.jpg";
 
 interface Person {
   id: number;
@@ -116,8 +117,8 @@ const PeoplePage: React.FC = () => {
       name: "Purujit Hada",
       title: "Student Researcher",
       category: "undergrad",
-      bio: "",
-      image: "",
+      bio: "Purujit is an undergraduate researcher with a keen interest in data science, leveraging statistical models and machine learning to uncover insights and drive impactful solutions.",
+      image: PurujitProfile,
       email: "purujit.hada@sjsu.edu",
     },
   ];
