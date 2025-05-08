@@ -15,7 +15,7 @@ const FeaturedResearch = () => {
     },
     {
       id: 2,
-      title: "Code-Switching in Programming Environments",
+      title: "High School Partnerships",
       description:
         "Exploring how programmers naturally switch between natural language and programming languages during the development process.",
       image:

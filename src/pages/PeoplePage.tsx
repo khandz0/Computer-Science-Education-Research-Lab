@@ -75,7 +75,7 @@ const PeoplePage: React.FC = () => {
       name: "Nishant Nagesh",
       title: "Student Researcher",
       category: "undergrad",
-      bio: "Nishant is a masters student researcher with interests in educational technology and programming language learning.",
+      bio: "Nishant is a undergrad student researcher with interests in educational technology and programming language learning.",
       image: NishantProfile,
       email: "nishanth.nagesh@sjsu.edu",
       github: "nishant",
@@ -110,6 +110,15 @@ const PeoplePage: React.FC = () => {
       image: YusufProfile,
       email: "yusuf.gadelrab@sjsu.edu",
       linkedin: "https://www.linkedin.com/in/yusuf-gadelrab-76246b221/",
+    },
+    {
+      id: 9,
+      name: "Purujit Hada",
+      title: "Student Researcher",
+      category: "undergrad",
+      bio: "",
+      image: "",
+      email: "purujit.hada@sjsu.edu",
     },
   ];
 
