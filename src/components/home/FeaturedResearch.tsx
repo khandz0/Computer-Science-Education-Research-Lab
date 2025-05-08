@@ -17,9 +17,8 @@ const FeaturedResearch = () => {
       id: 2,
       title: "High School Partnerships",
       description:
-        "Exploring how programmers naturally switch between natural language and programming languages during the development process.",
-      image:
-        "https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "Our team collaborates with high schools to facilitate computer science classes, empowering students with foundational programming skills and fostering interest in technology.",
+      image: "",
     },
     {
       id: 3,
@@ -54,7 +53,7 @@ const FeaturedResearch = () => {
                 </h3>
                 <p className="text-gray-600 mb-4">{project.description}</p>
                 <Link
-                  to="/research"
+                  to="/projects"
                   className="flex items-center font-medium text-sjsu-blue hover:text-sjsu-gold transition-colors"
                 >
                   Learn more
