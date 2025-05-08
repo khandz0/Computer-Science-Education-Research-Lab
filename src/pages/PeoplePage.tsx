@@ -9,7 +9,7 @@ import EthelProfile from "../assets/profiles/ethel_image.jpeg";
 import NeelProfile from "../assets/profiles/Neel_image.png";
 import HarshithaProfile from "../assets/profiles/Harshitha.jpeg";
 import NishantProfile from "../assets/profiles/Nishant_img.jpeg";
-import LeeqaProfile from "../assets/profiles/leeqa_img.jpeg";
+import LeqaaProfile from "../assets/profiles/leeqa_img.jpeg";
 import AaravProfile from "../assets/profiles/AaravGhai.jpg";
 import YusufProfile from "../assets/profiles/yusuf_img.jpeg";
 import PurujitProfile from "../assets/profiles/PurujitProfile.jpg";
@@ -85,12 +85,12 @@ const PeoplePage: React.FC = () => {
     },
     {
       id: 6,
-      name: "Leeqa Deeb",
+      name: "Leqaa Deeb",
       title: "Student Researcher",
       category: "undergrad",
       bio: "Leeqa is an undergraduate researcher working on projects related to computer science education and learning tools.",
-      image: LeeqaProfile,
-      email: "leeqa.deeb@sjsu.edu",
+      image: LeqaaProfile,
+      email: "leqaa.deeb@sjsu.edu",
       linkedin: "https://www.linkedin.com/in/leqaa-deeb/",
     },
     {
