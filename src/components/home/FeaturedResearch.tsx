@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import Container from "../common/Container";
 import Section from "../common/Section";
 import Poster from "../../assets/researchday/poster.jpg";
+import YBHS from "../../assets/YBHS.jpg";
+import AIandML from "../../assets/AIandML.png";
 
 const FeaturedResearch = () => {
   const researchProjects = [
@@ -18,14 +20,14 @@ const FeaturedResearch = () => {
       title: "High School Partnerships",
       description:
         "Our team collaborates with high schools to facilitate computer science classes, empowering students with foundational programming skills and fostering interest in technology.",
-      image: "",
+      image: YBHS,
     },
     {
       id: 3,
       title: "Artificial Intelligence and Machine Learning in Education",
       description:
         "Exploring how AI and ML can revolutionize education by creating intelligent tools, such as IDEs and code editors, that enhance learning experiences and support educators.",
-      image: "",
+      image: AIandML,
     },
   ];
 
