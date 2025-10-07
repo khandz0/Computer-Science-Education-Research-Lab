@@ -13,6 +13,109 @@ const BilingualWorkshopPage: React.FC = () => {
       <PageHeader title="Projects" subtitle="" />
 
       <Container className="py-12">
+        <Section title="AI & ML Workshop: Text Classifier">
+          <div className="max-w-4xl mx-auto">
+            {/* Intro */}
+            <div className="bg-sjsu-lightgray rounded-lg p-6 mb-8">
+              <h3 className="text-xl font-bold text-sjsu-navy mb-3">
+                Project Overview
+              </h3>
+              <p className="text-gray-600">
+                In this hands-on workshop, students build a simple text-classification model
+                that distinguishes between short “happy” and “sad” phrases. The lab emphasizes
+                supervised learning through a predict → run → reveal → reflect cycle and uses
+                a safe, student-created dataset. Estimated time: <span className="font-medium">2–3 hours</span>.
+              </p>
+            </div>
+
+            {/* Learning goals + audience */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+              <div className="bg-white rounded-lg shadow-md p-6">
+                <h4 className="text-lg font-bold text-sjsu-navy mb-2">Who It’s For</h4>
+                <ul className="list-disc pl-6 space-y-2 text-gray-600 text-sm">
+                  <li>Intro CS learners (post–CS1) and curious non-majors</li>
+                  <li>Students new to AI/ML and data-driven thinking</li>
+                </ul>
+              </div>
+              <div className="bg-white rounded-lg shadow-md p-6">
+                <h4 className="text-lg font-bold text-sjsu-navy mb-2">Learning Outcomes</h4>
+                <ul className="list-disc pl-6 space-y-2 text-gray-600 text-sm">
+                  <li>Explain supervised learning with labeled examples</li>
+                  <li>Create a small dataset and clean it for modeling</li>
+                  <li>Train/evaluate baseline models (Naive Bayes, Logistic Regression)</li>
+                  <li>Interpret accuracy, precision/recall, and confusion matrices</li>
+                  <li>Reflect on model errors and try custom inputs</li>
+                </ul>
+              </div>
+            </div>
+
+            {/* What students do */}
+            <div className="bg-white rounded-lg shadow-md overflow-hidden mb-8">
+              <div className="bg-sjsu-navy py-2 px-4">
+                <h4 className="text-white font-medium text-center">Workshop Flow (Colab)</h4>
+              </div>
+              <div className="p-6">
+                <ol className="list-decimal pl-6 space-y-2 text-gray-600 text-sm">
+                  <li>Install & import libraries (pandas, scikit-learn, matplotlib)</li>
+                  <li>Create & upload a small <code>text,label</code> CSV</li>
+                  <li>Clean and check class balance</li>
+                  <li>Split data into train/test (80/20)</li>
+                  <li>Train baselines (Bag-of-Words + NB / LogReg)</li>
+                  <li>Evaluate with metrics + confusion matrix</li>
+                  <li>Review misclassifications to understand errors</li>
+                  <li>Try your own phrases; (optional) TF-IDF + LogReg and save model</li>
+                </ol>
+              </div>
+            </div>
+
+            {/* Research connection */}
+            <div className="bg-sjsu-lightgray rounded-lg p-6 mb-8">
+              <h3 className="text-xl font-bold text-sjsu-navy mb-3">Research Integration</h3>
+              <p className="text-gray-600 mb-4">
+                This workshop is part of our study on how students transfer knowledge
+                from imperative, rule-based programming to data-driven AI/ML. We compare
+                instructional approaches (e.g., graphical vs. code-based, explicit transfer
+                interventions) and measure short-term learning gains and perceptions.
+              </p>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="bg-white rounded-lg shadow p-5">
+                  <h4 className="font-bold text-sjsu-blue mb-2">Design Highlights</h4>
+                  <ul className="list-disc pl-6 space-y-2 text-gray-600 text-sm">
+                    <li>Two phases with ~80 students per phase</li>
+                    <li>Pre/Post surveys (confidence, identity/belonging, attitudes)</li>
+                    <li>Optional short interviews for qualitative insights</li>
+                  </ul>
+                </div>
+                <div className="bg-white rounded-lg shadow p-5">
+                  <h4 className="font-bold text-sjsu-blue mb-2">Analysis Plan</h4>
+                  <ul className="list-disc pl-6 space-y-2 text-gray-600 text-sm">
+                    <li>Descriptives & repeated-measures ANOVA (or non-parametric)</li>
+                    <li>Thematic analysis of open-ended responses/interviews</li>
+                    <li>Mixed-methods integration to triangulate findings</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            {/* Logistics / callouts */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="bg-white rounded-lg shadow-md p-6">
+                <h4 className="text-lg font-bold text-sjsu-navy mb-2">Format</h4>
+                <p className="text-gray-600 text-sm">Online (Google Colab) with guided prompts and reflection.</p>
+              </div>
+              <div className="bg-white rounded-lg shadow-md p-6">
+                <h4 className="text-lg font-bold text-sjsu-navy mb-2">Duration</h4>
+                <p className="text-gray-600 text-sm">Single session, approximately 2–3 hours.</p>
+              </div>
+              <div className="bg-white rounded-lg shadow-md p-6">
+                <h4 className="text-lg font-bold text-sjsu-navy mb-2">Artifacts</h4>
+                <p className="text-gray-600 text-sm">Student dataset, baseline models, evaluation plots, saved classifier.</p>
+              </div>
+            </div>
+          </div>
+        </Section>
+
+
         <Section
           title="Programming across Languages: Investigating the Impact of Bilingual Programming on Computing Attitudes and Behavior"
           className="mb-12"

@@ -1,7 +1,6 @@
 import React from "react";
 import HeroSection from "../components/home/HeroSection";
 import FeaturedResearch from "../components/home/FeaturedResearch";
-// import LatestNews from "../components/home/LatestNews";
 import Container from "../components/common/Container";
 import Section from "../components/common/Section";
 import { Users, Mail, Contact } from "lucide-react";
