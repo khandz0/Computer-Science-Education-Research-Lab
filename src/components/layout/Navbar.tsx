@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
-import { Menu, X, Beaker } from "lucide-react";
+import { Menu, X, Microscope } from "lucide-react";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -30,9 +30,9 @@ const Navbar = () => {
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <NavLink to="/" className="flex items-center" onClick={closeMenu}>
-              <Beaker className="h-8 w-8 text-sjsu-blue" />
+              <Microscope className="h-8 w-8 text-sjsu-blue" />
               <span className="ml-2 text-xl font-semibold text-sjsu-blue">
-                CSE Research Lab
+                CSEd Research Lab
               </span>
             </NavLink>
           </div>
