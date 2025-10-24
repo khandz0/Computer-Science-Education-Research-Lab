@@ -13,6 +13,7 @@ import LeqaaProfile from "../assets/profiles/leeqa_img.jpeg";
 import AaravProfile from "../assets/profiles/AaravGhai.jpg";
 import YusufProfile from "../assets/profiles/yusuf_img.jpeg";
 import PurujitProfile from "../assets/profiles/PurujitProfile.jpg";
+import ShishirProfile from "../assets/profiles/shishir.jpeg";
 
 interface Person {
   id: number;
@@ -122,6 +123,17 @@ const PeoplePage: React.FC = () => {
       image: PurujitProfile,
       email: "purujit.hada@sjsu.edu",
     },
+    {
+      id: 10,
+      name: "Shishir Dongre",
+      title: "Student Researcher",
+      category: "masters",
+      bio: "Shishir is a graduate student pursuing a Master of Science in Computer Science at San Jose State University, with a strong foundation in full-stack development, cloud architecture, and AI-driven solutions",
+      image: ShishirProfile,
+      email: "shishir.dongrem@sjsu.edu",
+      linkedin: "https://www.linkedin.com/in/shishirdongre/",
+      github: "shishirdongre",
+    }
   ];
 
   const categories = [
