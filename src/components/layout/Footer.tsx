@@ -1,4 +1,4 @@
-import { Mail, MapPin, ExternalLink } from "lucide-react";
+import { Mail, MapPin, ExternalLink, Github } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -32,7 +32,7 @@ const Footer = () => {
                   href="mailto:contact@cserl.edu"
                   className="hover:text-sjsu-gold transition-colors"
                 >
-                  research.team@organization.com
+                  csedresearchsjsu@gmail.com
                 </a>
               </li>
               <li className="flex items-center">
@@ -71,17 +71,17 @@ const Footer = () => {
               {/* <li>
                 <Link to="/publications" className="hover:text-sjsu-gold transition-colors">Publications</Link>
               </li> */}
-              {/* <li className="flex items-center">
+              <li className="flex items-center">
                 <Github size={16} className="mr-2" />
-                <a 
-                  href="https://github.com/cserl" 
-                  target="_blank" 
+                <a
+                  href="https://github.com/csedresearchsjsu"
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-sjsu-gold transition-colors"
                 >
                   GitHub
                 </a>
-              </li> */}
+              </li>
               <li className="flex items-center">
                 <ExternalLink size={16} className="mr-2" />
                 <a
