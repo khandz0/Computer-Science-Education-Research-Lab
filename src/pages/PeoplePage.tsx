@@ -134,6 +134,28 @@ const PeoplePage: React.FC = () => {
       linkedin: "https://www.linkedin.com/in/shishirdongre/",
       github: "shishirdongre",
     }
+    // {
+    //   id: 11,
+    //   name: "Duy Do",
+    //   title: "Student Researcher",
+    //   category: "masters",
+    //   bio: "Shishir is a graduate student pursuing a Master of Science in Computer Science at San Jose State University, with a strong foundation in full-stack development, cloud architecture, and AI-driven solutions",
+    //   image: ShishirProfile,
+    //   email: "shishir.dongrem@sjsu.edu",
+    //   linkedin: "https://www.linkedin.com/in/shishirdongre/",
+    //   github: "shishirdongre",
+    // },
+    // {
+    //   id: 12,
+    //   name: "Ayush Dongre",
+    //   title: "Student Researcher",
+    //   category: "masters",
+    //   bio: "Shishir is a graduate student pursuing a Master of Science in Computer Science at San Jose State University, with a strong foundation in full-stack development, cloud architecture, and AI-driven solutions",
+    //   image: ShishirProfile,
+    //   email: "shishir.dongrem@sjsu.edu",
+    //   linkedin: "https://www.linkedin.com/in/shishirdongre/",
+    //   github: "shishirdongre",
+    // }
   ];
 
   const categories = [
