@@ -13,18 +13,17 @@ const BilingualWorkshopPage: React.FC = () => {
       <PageHeader title="Projects" subtitle="" />
 
       <Container className="py-12">
-        <Section title="AI & ML Workshop: Text Classifier">
+        <Section title="AI & ML Workshop: Text Classifier (Yelp Reviews)">
           <div className="max-w-4xl mx-auto">
             {/* Intro */}
             <div className="bg-sjsu-lightgray rounded-lg p-6 mb-8">
-              <h3 className="text-xl font-bold text-sjsu-navy mb-3">
-                Project Overview
-              </h3>
+              <h3 className="text-xl font-bold text-sjsu-navy mb-3">Project Overview</h3>
               <p className="text-gray-600">
-                In this hands-on workshop, students build a simple text-classification model
-                that distinguishes between short “happy” and “sad” phrases. The lab emphasizes
-                supervised learning through a predict → run → reveal → reflect cycle and uses
-                a safe, student-created dataset. Estimated time: <span className="font-medium">2–3 hours</span>.
+                In this hands-on workshop, participants build a <strong>text classification model</strong> that distinguishes
+                between <em>positive</em> and <em>negative</em> Yelp reviews. Using Python in Google Colab, students explore the
+                end-to-end process of supervised learning—data preparation, model training, evaluation, and reflection. The activity
+                follows an interactive <strong>predict → run → reveal → reflect</strong> cycle to reinforce conceptual understanding
+                and computational thinking. Estimated completion time: <span className="font-medium">2–3 hours</span>.
               </p>
             </div>
 
@@ -33,18 +32,19 @@ const BilingualWorkshopPage: React.FC = () => {
               <div className="bg-white rounded-lg shadow-md p-6">
                 <h4 className="text-lg font-bold text-sjsu-navy mb-2">Who It’s For</h4>
                 <ul className="list-disc pl-6 space-y-2 text-gray-600 text-sm">
-                  <li>Intro CS learners (post–CS1) and curious non-majors</li>
-                  <li>Students new to AI/ML and data-driven thinking</li>
+                  <li>Introductory CS learners (post–CS1) and curious non-majors</li>
+                  <li>Students new to artificial intelligence and data-driven programming</li>
+                  <li>Participants interested in the logic behind real-world AI systems</li>
                 </ul>
               </div>
               <div className="bg-white rounded-lg shadow-md p-6">
                 <h4 className="text-lg font-bold text-sjsu-navy mb-2">Learning Outcomes</h4>
                 <ul className="list-disc pl-6 space-y-2 text-gray-600 text-sm">
-                  <li>Explain supervised learning with labeled examples</li>
-                  <li>Create a small dataset and clean it for modeling</li>
-                  <li>Train/evaluate baseline models (Naive Bayes, Logistic Regression)</li>
-                  <li>Interpret accuracy, precision/recall, and confusion matrices</li>
-                  <li>Reflect on model errors and try custom inputs</li>
+                  <li>Explain how supervised learning uses labeled examples to “teach” a model</li>
+                  <li>Clean and inspect a dataset of Yelp reviews for balanced class distribution</li>
+                  <li>Train and compare baseline classifiers (Naive Bayes, Logistic Regression)</li>
+                  <li>Interpret performance metrics (accuracy, precision, recall) and confusion matrices</li>
+                  <li>Reflect on misclassifications and test models with custom review samples</li>
                 </ul>
               </div>
             </div>
@@ -52,18 +52,18 @@ const BilingualWorkshopPage: React.FC = () => {
             {/* What students do */}
             <div className="bg-white rounded-lg shadow-md overflow-hidden mb-8">
               <div className="bg-sjsu-navy py-2 px-4">
-                <h4 className="text-white font-medium text-center">Workshop Flow (Colab)</h4>
+                <h4 className="text-white font-medium text-center">Workshop Flow (Google Colab)</h4>
               </div>
               <div className="p-6">
                 <ol className="list-decimal pl-6 space-y-2 text-gray-600 text-sm">
-                  <li>Install & import libraries (pandas, scikit-learn, matplotlib)</li>
-                  <li>Create & upload a small <code>text,label</code> CSV</li>
-                  <li>Clean and check class balance</li>
-                  <li>Split data into train/test (80/20)</li>
-                  <li>Train baselines (Bag-of-Words + NB / LogReg)</li>
-                  <li>Evaluate with metrics + confusion matrix</li>
-                  <li>Review misclassifications to understand errors</li>
-                  <li>Try your own phrases; (optional) TF-IDF + LogReg and save model</li>
+                  <li>Install &amp; import essential libraries (<code>pandas</code>, <code>scikit-learn</code>, <code>matplotlib</code>)</li>
+                  <li>Load a labeled <code>text,label</code> CSV of Yelp reviews</li>
+                  <li>Clean the dataset and verify class balance</li>
+                  <li>Split data into training and testing sets (80/20)</li>
+                  <li>Train baseline Bag-of-Words models (Naive Bayes and Logistic Regression)</li>
+                  <li>Evaluate models with metrics and visualize a confusion matrix</li>
+                  <li>Analyze misclassified reviews to understand model limitations</li>
+                  <li>Test custom review samples; (optional) use TF-IDF + Logistic Regression and save the model</li>
                 </ol>
               </div>
             </div>
@@ -72,26 +72,25 @@ const BilingualWorkshopPage: React.FC = () => {
             <div className="bg-sjsu-lightgray rounded-lg p-6 mb-8">
               <h3 className="text-xl font-bold text-sjsu-navy mb-3">Research Integration</h3>
               <p className="text-gray-600 mb-4">
-                This workshop is part of our study on how students transfer knowledge
-                from imperative, rule-based programming to data-driven AI/ML. We compare
-                instructional approaches (e.g., graphical vs. code-based, explicit transfer
-                interventions) and measure short-term learning gains and perceptions.
+                This workshop supports our lab’s ongoing research on <strong>knowledge transfer</strong> between rule-based programming
+                and data-driven machine learning. We investigate how novice programmers develop conceptual understanding under different
+                instructional modalities (e.g., code-based vs. graphical environments) and reflection prompts.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="bg-white rounded-lg shadow p-5">
                   <h4 className="font-bold text-sjsu-blue mb-2">Design Highlights</h4>
                   <ul className="list-disc pl-6 space-y-2 text-gray-600 text-sm">
-                    <li>Two phases with ~80 students per phase</li>
-                    <li>Pre/Post surveys (confidence, identity/belonging, attitudes)</li>
-                    <li>Optional short interviews for qualitative insights</li>
+                    <li>Two study phases with ~80 students per phase</li>
+                    <li>Pre/post surveys measuring confidence, belonging, and AI attitudes</li>
+                    <li>Optional short interviews for qualitative insights on learning transfer</li>
                   </ul>
                 </div>
                 <div className="bg-white rounded-lg shadow p-5">
                   <h4 className="font-bold text-sjsu-blue mb-2">Analysis Plan</h4>
                   <ul className="list-disc pl-6 space-y-2 text-gray-600 text-sm">
-                    <li>Descriptives & repeated-measures ANOVA (or non-parametric)</li>
-                    <li>Thematic analysis of open-ended responses/interviews</li>
-                    <li>Mixed-methods integration to triangulate findings</li>
+                    <li>Descriptive statistics and repeated-measures ANOVA (or non-parametric alternatives)</li>
+                    <li>Thematic analysis of open-ended reflections and interviews</li>
+                    <li>Mixed-methods synthesis to triangulate quantitative and qualitative findings</li>
                   </ul>
                 </div>
               </div>
@@ -101,7 +100,9 @@ const BilingualWorkshopPage: React.FC = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="bg-white rounded-lg shadow-md p-6">
                 <h4 className="text-lg font-bold text-sjsu-navy mb-2">Format</h4>
-                <p className="text-gray-600 text-sm">Online (Google Colab) with guided prompts and reflection.</p>
+                <p className="text-gray-600 text-sm">
+                  Online Google Colab notebook with guided prompts and built-in reflection checkpoints.
+                </p>
               </div>
               <div className="bg-white rounded-lg shadow-md p-6">
                 <h4 className="text-lg font-bold text-sjsu-navy mb-2">Duration</h4>
@@ -109,11 +110,15 @@ const BilingualWorkshopPage: React.FC = () => {
               </div>
               <div className="bg-white rounded-lg shadow-md p-6">
                 <h4 className="text-lg font-bold text-sjsu-navy mb-2">Artifacts</h4>
-                <p className="text-gray-600 text-sm">Student dataset, baseline models, evaluation plots, saved classifier.</p>
+                <p className="text-gray-600 text-sm">
+                  Cleaned Yelp review dataset, trained models (Naive Bayes, Logistic Regression), evaluation reports,
+                  confusion matrix plots, and a saved classifier file.
+                </p>
               </div>
             </div>
           </div>
         </Section>
+
 
 
         <Section
