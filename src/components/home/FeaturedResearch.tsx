@@ -4,7 +4,7 @@ import Container from "../common/Container";
 import Section from "../common/Section";
 import Poster from "../../assets/researchday/poster.jpg";
 import YBHS from "../../assets/YBHS.jpg";
-import AIandML from "../../assets/AIandML.png";
+import AIandML from "../../assets/AI&ML/AI&ML2.jpeg";
 
 const FeaturedResearch = () => {
   const researchProjects = [
@@ -26,9 +26,9 @@ const FeaturedResearch = () => {
       id: 3,
       title: "AI & ML Workshop: Text Classifier in Education",
       description:
-        "A hands-on workshop introducing students to supervised learning through building a simple text classifier in Google Colab. " +
-        "Participants create their own dataset, train models (Naive Bayes and Logistic Regression), evaluate results, and reflect on how AI and ML concepts can enhance CS learning experiences. " +
-        "This workshop also serves as a research study examining how students transfer programming knowledge into data-driven thinking.",
+        "A hands-on workshop where students explore supervised learning by building a simple text classifier. " +
+        "Participants train models like Naive Bayes and Logistic Regression, evaluate results, and reflect on how AI concepts connect to computer science learning. " +
+        "The workshop also supports research on how students apply programming knowledge to data-driven problem solving.",
       image: AIandML,
     },
   ];
