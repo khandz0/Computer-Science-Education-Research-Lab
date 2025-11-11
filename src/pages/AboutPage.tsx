@@ -3,7 +3,7 @@ import PageHeader from "../components/common/PageHeader";
 import Container from "../components/common/Container";
 import Section from "../components/common/Section";
 import { CheckCircle } from "lucide-react";
-import Workshop from "../assets/workshop/workshop1.jpeg";
+import Workshop from "../assets/AI&ML/AI&ML4.jpg";
 import Workshop3 from "../assets/workshop/workshop3.jpeg";
 
 const AboutPage: React.FC = () => {
