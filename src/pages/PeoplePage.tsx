@@ -41,17 +41,6 @@ const PeoplePage: React.FC = () => {
       linkedin: "https://www.linkedin.com/in/dr-ethel-tshukudu-b9965338/",
     },
     {
-      id: 2,
-      name: "Neel Shah",
-      title: "Student Researcher",
-      category: "masters",
-      bio: "Neel is a passionate master's student with a strong interest in innovative learning methods, computer science education, programming tools, and inclusive learning environments.",
-      image: NeelProfile,
-      email: "neelasheshbhai.shah@sjsu.edu",
-      linkedin: "https://www.linkedin.com/in/nshah1010/",
-      github: "SpartaNeel1010",
-    },
-    {
       id: 3,
       name: "Thien Khang Kieu",
       title: "Student Researcher",
@@ -93,16 +82,6 @@ const PeoplePage: React.FC = () => {
       image: LeqaaProfile,
       email: "leqaa.deeb@sjsu.edu",
       linkedin: "https://www.linkedin.com/in/leqaa-deeb/",
-    },
-    {
-      id: 7,
-      name: "Aarav Ghai",
-      title: "Student Researcher",
-      category: "undergrad",
-      bio: "Aarav is an undergraduate researcher with interests in computer science education and educational tools development.",
-      image: AaravProfile,
-      email: "aaravmanav.ghai@sjsu.edu",
-      linkedin: "https://www.linkedin.com/in/ghaiaarav/",
     },
     {
       id: 8,
@@ -156,6 +135,30 @@ const PeoplePage: React.FC = () => {
     //   linkedin: "https://www.linkedin.com/in/shishirdongre/",
     //   github: "shishirdongre",
     // }
+  ];
+
+  const pastResearchers: Person[] = [
+    {
+      id: 7,
+      name: "Aarav Ghai",
+      title: "Student Researcher",
+      category: "undergrad",
+      bio: "Aarav is an undergraduate researcher with interests in computer science education and educational tools development.",
+      image: AaravProfile,
+      email: "aaravmanav.ghai@sjsu.edu",
+      linkedin: "https://www.linkedin.com/in/ghaiaarav/",
+    },
+    {
+      id: 2,
+      name: "Neel Shah",
+      title: "Student Researcher",
+      category: "masters",
+      bio: "Neel is a passionate master's student with a strong interest in innovative learning methods, computer science education, programming tools, and inclusive learning environments.",
+      image: NeelProfile,
+      email: "neelasheshbhai.shah@sjsu.edu",
+      linkedin: "https://www.linkedin.com/in/nshah1010/",
+      github: "SpartaNeel1010",
+    },
   ];
 
   const categories = [
@@ -254,6 +257,35 @@ const PeoplePage: React.FC = () => {
             </Section>
           );
         })}
+
+        <Section title="Past Researchers" className="mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {pastResearchers.map((person) => (
+              <div
+                key={person.id}
+                className="bg-white rounded-lg shadow-md overflow-hidden transition-transform hover:shadow-lg hover:-translate-y-1 duration-300"
+              >
+                <div className="aspect-w-16 aspect-h-9">
+                  <img
+                    src={person.image}
+                    alt={person.name}
+                    className="object-cover w-full h-60"
+                  />
+                </div>
+                <div className="p-6">
+                  <h3 className="text-xl font-bold text-sjsu-navy">
+                    {person.name}
+                  </h3>
+                  <p className="text-sjsu-blue font-medium mb-3">
+                    {person.title}
+                  </p>
+                  <p className="text-gray-600 mb-4 text-sm">{person.bio}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </Section>
+
 
         <Section title="Join Our Lab">
           <div className="max-w-3xl mx-auto text-center bg-sjsu-lightgray p-8 rounded-lg">
