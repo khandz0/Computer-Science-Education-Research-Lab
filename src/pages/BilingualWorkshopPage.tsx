@@ -6,6 +6,8 @@ import workshop1 from "../assets/workshop/workshop1.jpeg";
 import workshop2 from "../assets/workshop/workshop2.jpeg";
 import workshop3 from "../assets/workshop/workshop3.jpeg";
 import workshop from "../assets/workshop/workshop.jpeg";
+import codeinmandarin from "../assets/workshop/codeinmandarin.png";
+import codeinspanish from "../assets/workshop/codeinspanish.png";
 
 const BilingualWorkshopPage: React.FC = () => {
   return (
@@ -147,7 +149,7 @@ const BilingualWorkshopPage: React.FC = () => {
                 className="w-full h-64 object-cover rounded-lg shadow-md"
               />
               <img
-                src={workshop1}
+                src={workshop2}
                 alt="Workshop presentation session"
                 className="w-full h-64 object-cover rounded-lg shadow-md"
               />
@@ -223,7 +225,7 @@ const BilingualWorkshopPage: React.FC = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
               <div className="bg-white rounded-lg shadow-md overflow-hidden">
                 <img
-                  src={workshop2}
+                  src={workshop1}
                   alt="Group discussion during workshop"
                   className="w-full h-48 object-cover"
                 />
@@ -376,7 +378,7 @@ const BilingualWorkshopPage: React.FC = () => {
                   </div>
                   <div className="p-4">
                     <img
-                      src={workshop1}
+                      src={codeinmandarin}
                       alt="Students coding in English and Mandarin"
                       className="w-full h-40 object-cover rounded"
                     />
@@ -385,13 +387,13 @@ const BilingualWorkshopPage: React.FC = () => {
                 <div className="border border-gray-200 rounded-lg overflow-hidden">
                   <div className="bg-sjsu-navy py-2 px-4">
                     <h4 className="text-white font-medium text-center">
-                      Coding in English and French
+                      Coding in English and Spanish
                     </h4>
                   </div>
                   <div className="p-4">
                     <img
-                      src={workshop3}
-                      alt="Students coding in English and French"
+                      src={codeinspanish}
+                      alt="Students coding in English and Spanish"
                       className="w-full h-40 object-cover rounded"
                     />
                   </div>
