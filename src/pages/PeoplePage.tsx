@@ -14,6 +14,8 @@ import AaravProfile from "../assets/profiles/AaravGhai.jpg";
 import YusufProfile from "../assets/profiles/yusuf_img.jpeg";
 import PurujitProfile from "../assets/profiles/PurujitProfile.jpg";
 import ShishirProfile from "../assets/profiles/shishir.jpeg";
+import DuyProfile from "../assets/profiles/duyprofile.jpg";
+import AyushProfile from "../assets/profiles/ayushprofile.jpg";
 
 interface Person {
   id: number;
@@ -47,7 +49,7 @@ const PeoplePage: React.FC = () => {
       category: "undergrad",
       bio: "Thien is an undergraduate student at San José State University with a strong interest in computer science education, programming tools, and inclusive learning.",
       image: ThienProfile,
-      email: "thienkhang.kieu@sjsu.edu",
+      email: "kieuth24@gmail.com",
       linkedin: "https://www.linkedin.com/in/thienkhangkieu2606/",
       github: "khandz0",
     },
@@ -112,29 +114,29 @@ const PeoplePage: React.FC = () => {
       email: "shishir.dongrem@sjsu.edu",
       linkedin: "https://www.linkedin.com/in/shishirdongre/",
       github: "shishirdongre",
+    },
+    {
+      id: 11,
+      name: "Duy Do",
+      title: "Student Researcher",
+      category: "undergrad",
+      bio: "Duy Do is a data science student at San Jose State University whose curiosity lies in how people learn to think computationally in the age of AI. He is passionate about creating practical, evidence-based strategies that make machine learning more approachable for beginners and inspire the next generation of data scientists.",
+      image: DuyProfile,
+      email: "duydo1836@gmail.com",
+      linkedin: "https://www.linkedin.com/in/duy-do-b80039268/",
+      github: "ddo2024",
+    },
+    {
+      id: 12,
+      name: "Ayush Mahajan",
+      title: "Student Researcher",
+      category: "undergrad",
+      bio: "Data Science student at SJSU with software engineering internship and research experience.",
+      image: AyushProfile,
+      email: "ayush.mahajan@sjsu.edu",
+      linkedin: "https://www.linkedin.com/in/ayushgmahajan/",
+      github: "AyushMahajan06",
     }
-    // {
-    //   id: 11,
-    //   name: "Duy Do",
-    //   title: "Student Researcher",
-    //   category: "masters",
-    //   bio: "Shishir is a graduate student pursuing a Master of Science in Computer Science at San Jose State University, with a strong foundation in full-stack development, cloud architecture, and AI-driven solutions",
-    //   image: ShishirProfile,
-    //   email: "shishir.dongrem@sjsu.edu",
-    //   linkedin: "https://www.linkedin.com/in/shishirdongre/",
-    //   github: "shishirdongre",
-    // },
-    // {
-    //   id: 12,
-    //   name: "Ayush Dongre",
-    //   title: "Student Researcher",
-    //   category: "masters",
-    //   bio: "Shishir is a graduate student pursuing a Master of Science in Computer Science at San Jose State University, with a strong foundation in full-stack development, cloud architecture, and AI-driven solutions",
-    //   image: ShishirProfile,
-    //   email: "shishir.dongrem@sjsu.edu",
-    //   linkedin: "https://www.linkedin.com/in/shishirdongre/",
-    //   github: "shishirdongre",
-    // }
   ];
 
   const pastResearchers: Person[] = [
