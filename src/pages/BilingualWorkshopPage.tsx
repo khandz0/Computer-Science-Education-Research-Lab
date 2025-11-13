@@ -2,10 +2,10 @@ import React from "react";
 import PageHeader from "../components/common/PageHeader";
 import Container from "../components/common/Container";
 import Section from "../components/common/Section";
-import workshop1 from "../assets/workshop/workshop1.jpeg";
 import workshop2 from "../assets/workshop/workshop2.jpeg";
-import workshop3 from "../assets/workshop/workshop3.jpeg";
+import poster2 from "../assets/SIGCSE Poster.png";
 import workshop from "../assets/workshop/workshop.jpeg";
+import poster1 from "../assets/researchday/poster.jpg";
 import codeinmandarin from "../assets/workshop/codeinmandarin.png";
 import codeinspanish from "../assets/workshop/codeinspanish.png";
 
@@ -225,7 +225,7 @@ const BilingualWorkshopPage: React.FC = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
               <div className="bg-white rounded-lg shadow-md overflow-hidden">
                 <img
-                  src={workshop1}
+                  src={poster1}
                   alt="Group discussion during workshop"
                   className="w-full h-48 object-cover"
                 />
@@ -247,7 +247,7 @@ const BilingualWorkshopPage: React.FC = () => {
 
               <div className="bg-white rounded-lg shadow-md overflow-hidden">
                 <img
-                  src={workshop3}
+                  src={poster2}
                   alt="Workshop presentation"
                   className="w-full h-48 object-cover"
                 />

@@ -2,7 +2,7 @@ import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import Container from "../common/Container";
 import Section from "../common/Section";
-import Poster from "../../assets/researchday/poster.jpg";
+import Poster from "../../assets/SIGCSE Poster.png";
 import YBHS from "../../assets/YBHS.jpg";
 import AIandML from "../../assets/AI&ML/AI&ML2.jpeg";
 
