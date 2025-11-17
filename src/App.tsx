@@ -5,7 +5,7 @@ import Footer from "./components/layout/Footer";
 
 function App() {
   return (
-    <Router basename="/Computer-Science-Education-Research-Lab">
+    <Router>
       <div className="flex flex-col min-h-screen">
         <Navbar />
         <main className="flex-grow">
