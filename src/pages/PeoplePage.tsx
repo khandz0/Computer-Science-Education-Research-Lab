@@ -12,7 +12,7 @@ import NishantProfile from "../assets/profiles/Nishant_img.jpeg";
 import LeqaaProfile from "../assets/profiles/leeqa_img.jpeg";
 import AaravProfile from "../assets/profiles/AaravGhai.jpg";
 import YusufProfile from "../assets/profiles/yusuf_img.jpeg";
-import PurujitProfile from "../assets/profiles/PurujitProfile.jpg";
+import PurujitProfile from "../assets/profiles/PurujitProfile.JPG";
 import ShishirProfile from "../assets/profiles/shishir.jpeg";
 import DuyProfile from "../assets/profiles/duyprofile.jpg";
 import AyushProfile from "../assets/profiles/ayushprofile.jpg";
