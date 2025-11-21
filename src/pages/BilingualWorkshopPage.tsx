@@ -5,7 +5,7 @@ import Section from "../components/common/Section";
 import workshop2 from "../assets/workshop/workshop2.jpeg";
 import poster2 from "../assets/posters/SIGCSE Poster.png";
 import workshop from "../assets/workshop/workshop.jpeg";
-import poster1 from "../assets/researchday/poster.jpg";
+import poster1 from "../assets/researchday/poster.JPG";
 import codeinmandarin from "../assets/workshop/codeinmandarin.png";
 import codeinspanish from "../assets/workshop/codeinspanish.png";
 
