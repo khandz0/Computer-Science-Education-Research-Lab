@@ -8,6 +8,12 @@ import workshop from "../assets/workshop/workshop.jpeg";
 import poster1 from "../assets/researchday/poster.JPG";
 import codeinmandarin from "../assets/workshop/codeinmandarin.png";
 import codeinspanish from "../assets/workshop/codeinspanish.png";
+import prep1 from "../assets/AI&ML/meeting/11-7-meeting.jpeg";
+import prep4 from "../assets/AI&ML/meeting/11-7-meeting3.jpg";
+import prep5 from "../assets/AI&ML/meeting/11-7-meeting4.jpg";
+import prep6 from "../assets/AI&ML/meeting/11-21-meeting.jpg";
+import prep7 from "../assets/AI&ML/meeting/11-21-meeting1.jpg";
+import poster from "../assets/AI&ML/poster.jpg";
 
 const ProjectsPage: React.FC = () => {
   return (
@@ -19,34 +25,91 @@ const ProjectsPage: React.FC = () => {
           <div className="max-w-4xl mx-auto">
             {/* Intro */}
             <div className="bg-sjsu-lightgray rounded-lg p-6 mb-8">
-              <h3 className="text-xl font-bold text-sjsu-navy mb-3">Project Overview</h3>
+              <h3 className="text-xl font-bold text-sjsu-navy mb-3">
+                Project Overview
+              </h3>
               <p className="text-gray-600 mb-4">
-                This workshop consists of <strong>two separate sessions</strong>—one using <strong>Python</strong> and another using <strong>Java</strong>—each focused on building a <strong>text classification model</strong> that distinguishes between <em>positive</em> and <em>negative</em> Yelp reviews. While the programming languages differ, both sessions share the same overall objective: exploring the end-to-end process of supervised learning through data preparation, model training, evaluation, and reflection. The activity follows an interactive <strong>predict → run → reveal → reflect</strong> cycle to reinforce conceptual understanding and computational thinking. Estimated completion time per session: <span className="font-medium">2–3 hours</span>.
+                This workshop consists of <strong>two separate sessions</strong>
+                —one using <strong>Python</strong> and another using{" "}
+                <strong>Java</strong>—each focused on building a{" "}
+                <strong>text classification model</strong> that distinguishes
+                between <em>positive</em> and <em>negative</em> Yelp reviews.
+                While the programming languages differ, both sessions share the
+                same overall objective: exploring the end-to-end process of
+                supervised learning through data preparation, model training,
+                evaluation, and reflection. The activity follows an interactive{" "}
+                <strong>predict → run → reveal → reflect</strong> cycle to
+                reinforce conceptual understanding and computational thinking.
+                Estimated completion time per session:{" "}
+                <span className="font-medium">2–3 hours</span>.
               </p>
               <p className="text-gray-600">
-                This workshop supports our lab's ongoing research on <strong>conceptual transfer</strong> between rule-based programming and data-driven machine learning. By offering separate sessions in Python and Java, we investigate how students' prior programming language knowledge influences their understanding of machine learning concepts and their ability to transfer conceptual understanding across different programming paradigms. As AI/ML systems become increasingly prevalent, understanding how students transition from rule-based programming (where they design solutions) to data-driven approaches (where they work with data preparation, cleaning, and model training) is crucial.
+                This workshop supports our lab's ongoing research on{" "}
+                <strong>conceptual transfer</strong> between rule-based
+                programming and data-driven machine learning. By offering
+                separate sessions in Python and Java, we investigate how
+                students' prior programming language knowledge influences their
+                understanding of machine learning concepts and their ability to
+                transfer conceptual understanding across different programming
+                paradigms. As AI/ML systems become increasingly prevalent,
+                understanding how students transition from rule-based
+                programming (where they design solutions) to data-driven
+                approaches (where they work with data preparation, cleaning, and
+                model training) is crucial.
               </p>
             </div>
 
             {/* Learning goals + audience */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
               <div className="bg-white rounded-lg shadow-md p-6">
-                <h4 className="text-lg font-bold text-sjsu-navy mb-2">Who It’s For</h4>
+                <h4 className="text-lg font-bold text-sjsu-navy mb-2">
+                  Who It’s For
+                </h4>
                 <ul className="list-disc pl-6 space-y-2 text-gray-600 text-sm">
-                  <li>Students who have completed <strong>CS 46A - Introduction to Programming</strong> at SJSU</li>
-                  <li>Students new to artificial intelligence and data-driven programming</li>
-                  <li>Participants interested in the methodology behind real-world AI systems</li>
+                  <li>
+                    Students who have completed{" "}
+                    <strong>CS 46A - Introduction to Programming</strong> at
+                    SJSU
+                  </li>
+                  <li>
+                    Students new to artificial intelligence and data-driven
+                    programming
+                  </li>
+                  <li>
+                    Participants interested in the methodology behind real-world
+                    AI systems
+                  </li>
                 </ul>
               </div>
               <div className="bg-white rounded-lg shadow-md p-6">
-                <h4 className="text-lg font-bold text-sjsu-navy mb-2">Learning Outcomes</h4>
+                <h4 className="text-lg font-bold text-sjsu-navy mb-2">
+                  Learning Outcomes
+                </h4>
                 <ul className="list-disc pl-6 space-y-2 text-gray-600 text-sm">
-                  <li>Explain how supervised learning uses labeled examples to “teach” a model</li>
-                  <li>Clean and inspect a dataset of Yelp reviews for balanced class distribution</li>
-                  <li>Train and evaluate baseline classifiers using machine learning algorithms</li>
-                  <li>Understand the relationship between rule-based and data-driven programming approaches</li>
-                  <li>Interpret performance metrics (accuracy, precision, recall) and confusion matrices</li>
-                  <li>Reflect on misclassifications and test models with custom review samples</li>
+                  <li>
+                    Explain how supervised learning uses labeled examples to
+                    “teach” a model
+                  </li>
+                  <li>
+                    Clean and inspect a dataset of Yelp reviews for balanced
+                    class distribution
+                  </li>
+                  <li>
+                    Train and evaluate baseline classifiers using machine
+                    learning algorithms
+                  </li>
+                  <li>
+                    Understand the relationship between rule-based and
+                    data-driven programming approaches
+                  </li>
+                  <li>
+                    Interpret performance metrics (accuracy, precision, recall)
+                    and confusion matrices
+                  </li>
+                  <li>
+                    Reflect on misclassifications and test models with custom
+                    review samples
+                  </li>
                 </ul>
               </div>
             </div>
@@ -54,34 +117,60 @@ const ProjectsPage: React.FC = () => {
             {/* What students do */}
             <div className="bg-white rounded-lg shadow-md overflow-hidden mb-8">
               <div className="bg-sjsu-navy py-2 px-4">
-                <h4 className="text-white font-medium text-center">Workshop Flow</h4>
+                <h4 className="text-white font-medium text-center">
+                  Workshop Flow
+                </h4>
               </div>
               <div className="p-6">
                 <p className="text-gray-600 text-sm mb-4">
-                  Participants engage in a structured learning experience that guides them through the machine learning workflow:
+                  Participants engage in a structured learning experience that
+                  guides them through the machine learning workflow:
                 </p>
                 <ul className="list-disc pl-6 space-y-2 text-gray-600 text-sm">
-                  <li>Set up the development environment and import necessary libraries</li>
+                  <li>
+                    Set up the development environment and import necessary
+                    libraries
+                  </li>
                   <li>Load and explore the Yelp review dataset</li>
                   <li>Preprocess and clean the data for model training</li>
                   <li>Split the data into training and testing sets</li>
                   <li>Train machine learning models to classify reviews</li>
                   <li>Evaluate model performance using various metrics</li>
-                  <li>Analyze results and reflect on model behavior and limitations</li>
-                  <li>Test the model with custom examples and explore extensions</li>
+                  <li>
+                    Analyze results and reflect on model behavior and
+                    limitations
+                  </li>
+                  <li>
+                    Test the model with custom examples and explore extensions
+                  </li>
                 </ul>
                 <p className="text-gray-600 text-sm mt-4">
-                  The workshop follows an interactive <strong>predict → run → reveal → reflect</strong> cycle, encouraging students to make predictions about outcomes before running code, observe results, and reflect on their understanding of the underlying concepts. A pre/post survey measures understanding before and after reveal to examine how far off the predictions are from actual results. Qualitative data is gathered from open-ended reflections throughout the workshop.
+                  The workshop follows an interactive{" "}
+                  <strong>predict → run → reveal → reflect</strong> cycle,
+                  encouraging students to make predictions about outcomes before
+                  running code, observe results, and reflect on their
+                  understanding of the underlying concepts. A pre/post survey
+                  measures understanding before and after reveal to examine how
+                  far off the predictions are from actual results. Qualitative
+                  data is gathered from open-ended reflections throughout the
+                  workshop.
                 </p>
               </div>
             </div>
 
             {/* Workshop Links Section */}
-            <div id="workshop-materials" className="bg-sjsu-lightgray rounded-lg p-6 mb-8 mt-8">
-              <h3 className="text-xl font-bold text-sjsu-navy mb-3">Workshop Materials</h3>
+            <div
+              id="workshop-materials"
+              className="bg-sjsu-lightgray rounded-lg p-6 mb-8 mt-8"
+            >
+              <h3 className="text-xl font-bold text-sjsu-navy mb-3">
+                Workshop Materials
+              </h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="bg-white rounded-lg shadow-md p-6">
-                  <h4 className="text-lg font-bold text-sjsu-navy mb-2">Python</h4>
+                  <h4 className="text-lg font-bold text-sjsu-navy mb-2">
+                    Python
+                  </h4>
                   <p className="text-gray-600 text-sm mb-2">
                     <a
                       href="#"
@@ -94,7 +183,9 @@ const ProjectsPage: React.FC = () => {
                   </p>
                 </div>
                 <div className="bg-white rounded-lg shadow-md p-6">
-                  <h4 className="text-lg font-bold text-sjsu-navy mb-2">Java</h4>
+                  <h4 className="text-lg font-bold text-sjsu-navy mb-2">
+                    Java
+                  </h4>
                   <p className="text-gray-600 text-sm mb-2">
                     <a
                       href="#"
@@ -118,10 +209,54 @@ const ProjectsPage: React.FC = () => {
                 </div>
               </div>
             </div>
+
+            {/* Workshop Preparation Section */}
+            <div className="bg-white rounded-lg shadow-md overflow-hidden mb-8">
+              <div className="bg-sjsu-navy py-2 px-4">
+                <h3 className="text-white font-medium text-center text-xl">
+                  Workshop Preparation
+                </h3>
+              </div>
+              <div className="p-6">
+                <p className="text-gray-600 text-sm mb-4 text-center">
+                  Our team preparing for the workshop sessions
+                </p>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                  <img
+                    src={prep1}
+                    alt="Team preparing for workshop"
+                    className="w-full h-48 object-cover rounded-lg shadow-md"
+                  />
+                  <img
+                    src={prep4}
+                    alt="Team preparing for workshop"
+                    className="w-full h-48 object-cover rounded-lg shadow-md"
+                  />
+                  <img
+                    src={prep5}
+                    alt="Team preparing for workshop"
+                    className="w-full h-48 object-cover rounded-lg shadow-md"
+                  />
+                  <img
+                    src={prep6}
+                    alt="Team preparing for workshop"
+                    className="w-full h-48 object-cover rounded-lg shadow-md"
+                  />
+                  <img
+                    src={prep7}
+                    alt="Team preparing for workshop"
+                    className="w-full h-48 object-cover rounded-lg shadow-md"
+                  />
+                  <img
+                    src={poster}
+                    alt="Team preparing for workshop"
+                    className="w-full h-48 object-cover rounded-lg shadow-md"
+                  />
+                </div>
+              </div>
+            </div>
           </div>
         </Section>
-
-
 
         <Section
           title="Programming across Languages: Investigating the Impact of Bilingual Programming on Computing Attitudes and Behavior"
