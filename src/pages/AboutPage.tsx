@@ -3,8 +3,8 @@ import PageHeader from "../components/common/PageHeader";
 import Container from "../components/common/Container";
 import Section from "../components/common/Section";
 import { CheckCircle } from "lucide-react";
-import Workshop from "../assets/AI&ML/AI&ML4.jpg";
-import Workshop3 from "../assets/workshop/workshop3.jpeg";
+import Meeting from "../assets/AI&ML/meeting/meeting.jpg";
+import Meeting1 from "../assets/AI&ML/meeting/meeting1.jpg";
 
 const AboutPage: React.FC = () => {
   const researchFoci = [
@@ -51,7 +51,7 @@ const AboutPage: React.FC = () => {
                 real-world impact.
               </p>
               <img
-                src={Workshop}
+                src={Meeting}
                 alt="Research team workshop"
                 className="rounded-lg shadow-md w-full h-auto object-cover mb-6"
               />
@@ -59,7 +59,7 @@ const AboutPage: React.FC = () => {
 
             <div>
               <img
-                src={Workshop3}
+                src={Meeting1}
                 alt="Research team collaborating"
                 className="rounded-lg shadow-md w-full h-auto object-cover mb-6"
               />
