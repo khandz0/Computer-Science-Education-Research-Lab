@@ -14,6 +14,7 @@ import prep5 from "../assets/AI&ML/meeting/11-7-meeting4.jpg";
 import prep6 from "../assets/AI&ML/meeting/11-21-meeting.jpg";
 import prep7 from "../assets/AI&ML/meeting/11-21-meeting1.jpg";
 import poster from "../assets/AI&ML/poster.jpg";
+import PythonColabManual from "../assets/pdf/Python_Colab_Manual__without_reveals_.pdf";
 
 const ProjectsPage: React.FC = () => {
   return (
@@ -180,6 +181,15 @@ const ProjectsPage: React.FC = () => {
                     >
                       Colab Notebook
                     </a>
+                    <br />
+                    <a
+                      href={PythonColabManual}
+                      className="text-sjsu-blue hover:text-sjsu-navy hover:underline"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Python Lab Manual
+                    </a>
                   </p>
                 </div>
                 <div className="bg-white rounded-lg shadow-md p-6">
@@ -193,10 +203,9 @@ const ProjectsPage: React.FC = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      Lab Manual
+                      Java Lab Manual
                     </a>
-                  </p>
-                  <p className="text-gray-600 text-sm">
+                    <br />
                     <a
                       href="#"
                       className="text-sjsu-blue hover:text-sjsu-navy hover:underline"
