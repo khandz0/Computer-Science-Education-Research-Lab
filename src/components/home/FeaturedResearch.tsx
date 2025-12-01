@@ -4,7 +4,7 @@ import Container from "../common/Container";
 import Section from "../common/Section";
 import Poster from "../../assets/posters/SIGCSE Poster.png";
 import YBHS from "../../assets/others/YBHS.jpg";
-import AIandML from "../../assets/AI&ML/AI&ML2.jpeg";
+import AIandML from "../../assets/AI&ML/meeting/11-7-meeting.jpeg";
 
 const FeaturedResearch = () => {
   const researchProjects = [
