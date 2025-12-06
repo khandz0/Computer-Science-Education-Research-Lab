@@ -14,7 +14,7 @@ import prep5 from "../assets/AIMLWorkshop/meeting/11-7-meeting4.jpg";
 import prep6 from "../assets/AIMLWorkshop/meeting/11-21-meeting.jpg";
 import prep7 from "../assets/AIMLWorkshop/meeting/11-21-meeting1.jpg";
 import poster from "../assets/AIMLWorkshop/poster.jpg";
-import PythonColabManual from "../assets/pdf/Python_Colab_Manual__without_reveals_.pdf";
+import ColabManual from "../assets/pdf/Python_Colab_Manual__without_reveals_.pdf";
 
 const ProjectsPage: React.FC = () => {
   return (
@@ -167,45 +167,37 @@ const ProjectsPage: React.FC = () => {
               <h3 className="text-xl font-bold text-sjsu-navy mb-3">
                 Workshop Materials
               </h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="bg-white rounded-lg shadow-md p-6">
-                  <h4 className="text-lg font-bold text-sjsu-navy mb-2">
-                    Python
-                  </h4>
-                  <p className="text-gray-600 text-sm mb-2">
-                    <a
-                      href="#"
-                      className="text-sjsu-blue hover:text-sjsu-navy hover:underline"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Colab Notebook
-                    </a>
-                    <br />
-                    <a
-                      href={PythonColabManual}
-                      className="text-sjsu-blue hover:text-sjsu-navy hover:underline"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Workshop Manual
-                    </a>
-                  </p>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div className="bg-white rounded-lg shadow-md p-6 text-center">
+                  <a
+                    href="#"
+                    className="text-sjsu-blue hover:text-sjsu-navy hover:underline font-medium"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Google Colab Notebook
+                  </a>
                 </div>
-                <div className="bg-white rounded-lg shadow-md p-6">
-                  <h4 className="text-lg font-bold text-sjsu-navy mb-2">
+                <div className="bg-white rounded-lg shadow-md p-6 text-center">
+                  <a
+                    href={ColabManual}
+                    className="text-sjsu-blue hover:text-sjsu-navy hover:underline font-medium"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Workshop Manual
+                  </a>
+                </div>
+                <div className="bg-white rounded-lg shadow-md p-6 text-center">
+                  <a
+                    href="/workshop-dataset.csv"
+                    className="text-sjsu-blue hover:text-sjsu-navy hover:underline font-medium"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    download
+                  >
                     Dataset
-                  </h4>
-                  <p className="text-gray-600 text-sm mb-2">
-                    <a
-                      href="#"
-                      className="text-sjsu-blue hover:text-sjsu-navy hover:underline"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Reviews Dataset
-                    </a>
-                  </p>
+                  </a>
                 </div>
               </div>
             </div>
