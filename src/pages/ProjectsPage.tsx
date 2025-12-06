@@ -2,18 +2,18 @@ import React from "react";
 import PageHeader from "../components/common/PageHeader";
 import Container from "../components/common/Container";
 import Section from "../components/common/Section";
-import workshop2 from "../assets/workshop/workshop2.jpeg";
+import workshop2 from "../assets/BPWorkshop/workshop2.jpeg";
 import poster2 from "../assets/posters/SIGCSE Poster.png";
-import workshop from "../assets/workshop/workshop.jpeg";
+import workshop from "../assets/BPWorkshop/workshop.jpeg";
 import poster1 from "../assets/researchday/poster.JPG";
-import codeinmandarin from "../assets/workshop/codeinmandarin.png";
-import codeinspanish from "../assets/workshop/codeinspanish.png";
-import prep1 from "../assets/AI&ML/meeting/11-7-meeting.jpeg";
-import prep4 from "../assets/AI&ML/meeting/11-7-meeting3.jpg";
-import prep5 from "../assets/AI&ML/meeting/11-7-meeting4.jpg";
-import prep6 from "../assets/AI&ML/meeting/11-21-meeting.jpg";
-import prep7 from "../assets/AI&ML/meeting/11-21-meeting1.jpg";
-import poster from "../assets/AI&ML/poster.jpg";
+import codeinmandarin from "../assets/BPWorkshop/codeinmandarin.png";
+import codeinspanish from "../assets/BPWorkshop/codeinspanish.png";
+import prep1 from "../assets/AIMLWorkshop/meeting/11-7-meeting.jpeg";
+import prep4 from "../assets/AIMLWorkshop/meeting/11-7-meeting3.jpg";
+import prep5 from "../assets/AIMLWorkshop/meeting/11-7-meeting4.jpg";
+import prep6 from "../assets/AIMLWorkshop/meeting/11-21-meeting.jpg";
+import prep7 from "../assets/AIMLWorkshop/meeting/11-21-meeting1.jpg";
+import poster from "../assets/AIMLWorkshop/poster.jpg";
 import PythonColabManual from "../assets/pdf/Python_Colab_Manual__without_reveals_.pdf";
 
 const ProjectsPage: React.FC = () => {
@@ -188,13 +188,13 @@ const ProjectsPage: React.FC = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      Python Lab Manual
+                      Workshop Manual
                     </a>
                   </p>
                 </div>
                 <div className="bg-white rounded-lg shadow-md p-6">
                   <h4 className="text-lg font-bold text-sjsu-navy mb-2">
-                    Java
+                    Dataset
                   </h4>
                   <p className="text-gray-600 text-sm mb-2">
                     <a
@@ -203,16 +203,7 @@ const ProjectsPage: React.FC = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      Java Lab Manual
-                    </a>
-                    <br />
-                    <a
-                      href="#"
-                      className="text-sjsu-blue hover:text-sjsu-navy hover:underline"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Google Form
+                      Reviews Dataset
                     </a>
                   </p>
                 </div>

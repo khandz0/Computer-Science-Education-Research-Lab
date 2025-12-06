@@ -1,6 +1,5 @@
 import { ChevronRight } from "lucide-react";
 import Button from "../common/Button";
-// import ResearchPic from "../assets/researchday/researchday.jpg";
 import ResearchPic from "../../assets/researchday/researchday.JPG";
 
 const HeroSection = () => {

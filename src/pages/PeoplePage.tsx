@@ -80,7 +80,7 @@ const PeoplePage: React.FC = () => {
       name: "Leqaa Deeb",
       title: "Student Researcher",
       category: "undergrad",
-      bio: "Leeqa is an undergraduate researcher working on projects related to computer science education and learning tools.",
+      bio: "Leqaa is an undergraduate researcher working on projects related to computer science education and learning tools.",
       image: LeqaaProfile,
       email: "leqaa.deeb@sjsu.edu",
       linkedin: "https://www.linkedin.com/in/leqaa-deeb/",
@@ -136,7 +136,7 @@ const PeoplePage: React.FC = () => {
       email: "ayush.mahajan@sjsu.edu",
       linkedin: "https://www.linkedin.com/in/ayushgmahajan/",
       github: "AyushMahajan06",
-    }
+    },
   ];
 
   const pastResearchers: Person[] = [
@@ -287,7 +287,6 @@ const PeoplePage: React.FC = () => {
             ))}
           </div>
         </Section>
-
 
         <Section title="Join Our Lab">
           <div className="max-w-3xl mx-auto text-center bg-sjsu-lightgray p-8 rounded-lg">

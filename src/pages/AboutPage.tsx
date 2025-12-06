@@ -3,8 +3,8 @@ import PageHeader from "../components/common/PageHeader";
 import Container from "../components/common/Container";
 import Section from "../components/common/Section";
 import { CheckCircle } from "lucide-react";
-import Meeting from "../assets/AI&ML/meeting/11-21-meeting.jpg";
-import Meeting1 from "../assets/AI&ML/meeting/11-21-meeting1.jpg";
+import Meeting from "../assets/AIMLWorkshop/meeting/11-21-meeting.jpg";
+import Meeting1 from "../assets/AIMLWorkshop/meeting/11-21-meeting1.jpg";
 
 const AboutPage: React.FC = () => {
   const researchFoci = [
