@@ -14,7 +14,7 @@ import prep5 from "../assets/AIMLWorkshop/meeting/11-7-meeting4.jpg";
 import prep6 from "../assets/AIMLWorkshop/meeting/11-21-meeting.jpg";
 import prep7 from "../assets/AIMLWorkshop/meeting/11-21-meeting1.jpg";
 import poster from "../assets/AIMLWorkshop/poster.jpg";
-import ColabManual from "../assets/pdf/Python_Colab_Manual__without_reveals_.pdf";
+import ColabManual from "../assets/pdf/Colab_Manual_without_reveal.pdf";
 
 const ProjectsPage: React.FC = () => {
   return (
