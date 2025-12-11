@@ -14,7 +14,7 @@ import prep5 from "../assets/AIMLWorkshop/meeting/11-7-meeting4.jpg";
 import prep6 from "../assets/AIMLWorkshop/meeting/11-21-meeting.jpg";
 import prep7 from "../assets/AIMLWorkshop/meeting/11-21-meeting1.jpg";
 import poster from "../assets/AIMLWorkshop/poster.jpg";
-import ColabManual from "../assets/pdf/Colab_Manual_without_reveal.pdf";
+import ColabReveal from "../assets/pdf/Colab_Reveal.pdf";
 
 const ProjectsPage: React.FC = () => {
   return (
@@ -170,22 +170,22 @@ const ProjectsPage: React.FC = () => {
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div className="bg-white rounded-lg shadow-md p-6 text-center">
                   <a
-                    href="#"
+                    href="https://colab.research.google.com/drive/1mDShSP3qvVm8Zm1KbFy4GbJrx_xCI1Fx?usp=sharing"
                     className="text-sjsu-blue hover:text-sjsu-navy hover:underline font-medium"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Google Colab Notebook
+                    Colab Notebook
                   </a>
                 </div>
                 <div className="bg-white rounded-lg shadow-md p-6 text-center">
                   <a
-                    href={ColabManual}
+                    href="https://forms.gle/3Rr1rnpzLXCJsPVn9"
                     className="text-sjsu-blue hover:text-sjsu-navy hover:underline font-medium"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Workshop Manual
+                    Guess Quiz
                   </a>
                 </div>
                 <div className="bg-white rounded-lg shadow-md p-6 text-center">
@@ -197,6 +197,16 @@ const ProjectsPage: React.FC = () => {
                     download
                   >
                     Dataset
+                  </a>
+                </div>
+                <div className="bg-white rounded-lg shadow-md p-6 text-center">
+                  <a
+                    href={ColabReveal}
+                    className="text-sjsu-blue hover:text-sjsu-navy hover:underline font-medium"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Colab Notebook Reveal
                   </a>
                 </div>
               </div>
