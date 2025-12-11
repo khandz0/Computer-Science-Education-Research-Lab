@@ -27,36 +27,31 @@ const ProjectsPage: React.FC = () => {
             {/* Intro */}
             <div className="bg-sjsu-lightgray rounded-lg p-6 mb-8">
               <h3 className="text-xl font-bold text-sjsu-navy mb-3">
-                Project Overview
+                AI & ML Workshop Overview
               </h3>
               <p className="text-gray-600 mb-4">
-                This workshop consists of <strong>two separate sessions</strong>
-                —one using <strong>Python</strong> and another using{" "}
-                <strong>Java</strong>—each focused on building a{" "}
-                <strong>text classification model</strong> that distinguishes
-                between <em>positive</em> and <em>negative</em> Yelp reviews.
-                While the programming languages differ, both sessions share the
-                same overall objective: exploring the end-to-end process of
-                supervised learning through data preparation, model training,
-                evaluation, and reflection. The activity follows an interactive{" "}
-                <strong>predict → run → reveal → reflect</strong> cycle to
-                reinforce conceptual understanding and computational thinking.
-                Estimated completion time per session:{" "}
+                This hands-on workshop introduces students to fundamental
+                concepts in artificial intelligence and machine learning through
+                an accessible, beginner-friendly activity. Participants explore
+                the end-to-end process of working with data, training simple
+                models, evaluating results, and reflecting on outcomes. The
+                workshop emphasizes computational thinking, active exploration,
+                and student-centered learning in a supportive environment.
+              </p>
+              <p className="text-gray-600 mb-4">
+                Typical completion time:{" "}
                 <span className="font-medium">2–3 hours</span>.
               </p>
+              <h4 className="text-lg font-bold text-sjsu-navy mb-2 mt-4">
+                Educational Purpose
+              </h4>
               <p className="text-gray-600">
-                This workshop supports our lab's ongoing research on{" "}
-                <strong>conceptual transfer</strong> between rule-based
-                programming and data-driven machine learning. By offering
-                separate sessions in Python and Java, we investigate how
-                students' prior programming language knowledge influences their
-                understanding of machine learning concepts and their ability to
-                transfer conceptual understanding across different programming
-                paradigms. As AI/ML systems become increasingly prevalent,
-                understanding how students transition from rule-based
-                programming (where they design solutions) to data-driven
-                approaches (where they work with data preparation, cleaning, and
-                model training) is crucial.
+                This workshop supports our lab's mission of making AI and
+                machine learning more approachable for diverse learners. By
+                engaging students in interactive, inquiry-based activities, we
+                aim to deepen understanding of core ideas in data-driven
+                problem-solving and empower students to explore emerging
+                technologies with confidence.
               </p>
             </div>
 
