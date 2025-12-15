@@ -22,12 +22,12 @@ const ProjectsPage: React.FC = () => {
       <PageHeader title="Projects" subtitle="" />
 
       <Container className="py-12">
-        <Section title="Conceptual Transfer: ML Text Classification Workshop">
+        <Section title="Conceptual Transfer: AI and ML Workshop">
           <div className="max-w-4xl mx-auto">
             {/* Intro */}
             <div className="bg-sjsu-lightgray rounded-lg p-6 mb-8">
               <h3 className="text-xl font-bold text-sjsu-navy mb-3">
-                AI & ML Workshop Overview
+                Workshop Overview
               </h3>
               <p className="text-gray-600 mb-4">
                 This hands-on workshop introduces students to fundamental
@@ -142,14 +142,10 @@ const ProjectsPage: React.FC = () => {
                 </ul>
                 <p className="text-gray-600 text-sm mt-4">
                   The workshop follows an interactive{" "}
-                  <strong>predict → run → reveal → reflect</strong> cycle,
-                  encouraging students to make predictions about outcomes before
-                  running code, observe results, and reflect on their
-                  understanding of the underlying concepts. A pre/post survey
-                  measures understanding before and after reveal to examine how
-                  far off the predictions are from actual results. Qualitative
-                  data is gathered from open-ended reflections throughout the
-                  workshop.
+                  <strong>predict → run → reflect</strong> cycle, encouraging
+                  students to make predictions about outcomes before running
+                  code, observe results, and reflect on their understanding of
+                  the underlying concepts.
                 </p>
               </div>
             </div>
@@ -163,7 +159,7 @@ const ProjectsPage: React.FC = () => {
                 Workshop Materials
               </h3>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div className="bg-white rounded-lg shadow-md p-6 text-center">
+                {/* <div className="bg-white rounded-lg shadow-md p-6 text-center">
                   <a
                     href="https://colab.research.google.com/drive/1mDShSP3qvVm8Zm1KbFy4GbJrx_xCI1Fx?usp=sharing"
                     className="text-sjsu-blue hover:text-sjsu-navy hover:underline font-medium"
@@ -182,7 +178,7 @@ const ProjectsPage: React.FC = () => {
                   >
                     Guess Quiz
                   </a>
-                </div>
+                </div> */}
                 <div className="bg-white rounded-lg shadow-md p-6 text-center">
                   <a
                     href="/workshop-dataset.csv"
@@ -194,6 +190,7 @@ const ProjectsPage: React.FC = () => {
                     Dataset
                   </a>
                 </div>
+
                 <div className="bg-white rounded-lg shadow-md p-6 text-center">
                   <a
                     href={ColabReveal}
