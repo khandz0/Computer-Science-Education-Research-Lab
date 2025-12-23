@@ -8,11 +8,21 @@ import workshop from "../assets/BPWorkshop/workshop.jpeg";
 import poster1 from "../assets/researchday/poster.JPG";
 import codeinmandarin from "../assets/BPWorkshop/codeinmandarin.png";
 import codeinspanish from "../assets/BPWorkshop/codeinspanish.png";
+// Meeting preparation images
 import prep1 from "../assets/AIMLWorkshop/meeting/11-7-meeting.jpeg";
+import prep2 from "../assets/AIMLWorkshop/meeting/11-7-meeting1.jpeg";
+import prep3 from "../assets/AIMLWorkshop/meeting/11-7-meeting2.jpeg";
 import prep4 from "../assets/AIMLWorkshop/meeting/11-7-meeting3.jpg";
 import prep5 from "../assets/AIMLWorkshop/meeting/11-7-meeting4.jpg";
 import prep6 from "../assets/AIMLWorkshop/meeting/11-21-meeting.jpg";
 import prep7 from "../assets/AIMLWorkshop/meeting/11-21-meeting1.jpg";
+// Workshop day images
+import workshopDay1 from "../assets/AIMLWorkshop/workshopday/AI&MLworkshop.jpeg";
+import workshopDay2 from "../assets/AIMLWorkshop/workshopday/AI&MLworkshop1.jpeg";
+import workshopDay3 from "../assets/AIMLWorkshop/workshopday/AI&MLworkshop2.jpeg";
+import workshopDay4 from "../assets/AIMLWorkshop/workshopday/AI&MLworkshop3.jpeg";
+import workshopDay5 from "../assets/AIMLWorkshop/workshopday/AI&MLworkshop4.png";
+// Poster
 import poster from "../assets/AIMLWorkshop/poster.jpg";
 import ColabReveal from "../assets/pdf/Colab_Reveal.pdf";
 
@@ -204,47 +214,85 @@ const ProjectsPage: React.FC = () => {
               </div>
             </div>
 
-            {/* Workshop Preparation Section */}
+            {/* Workshop Picture Collage */}
             <div className="bg-white rounded-lg shadow-md overflow-hidden mb-8">
               <div className="bg-sjsu-navy py-2 px-4">
                 <h3 className="text-white font-medium text-center text-xl">
-                  Workshop Preparation
+                  Workshop Gallery
                 </h3>
               </div>
               <div className="p-6">
                 <p className="text-gray-600 text-sm mb-4 text-center">
-                  Our team preparing for the workshop sessions
+                  Photos from our workshop preparation and sessions
                 </p>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+                  {/* Meeting preparation images */}
                   <img
                     src={prep1}
-                    alt="Team preparing for workshop"
-                    className="w-full h-48 object-cover rounded-lg shadow-md"
+                    alt="Workshop preparation meeting"
+                    className="w-full h-48 object-cover rounded-lg shadow-md hover:scale-105 transition-transform cursor-pointer"
+                  />
+                  <img
+                    src={prep2}
+                    alt="Workshop preparation meeting"
+                    className="w-full h-48 object-cover rounded-lg shadow-md hover:scale-105 transition-transform cursor-pointer"
+                  />
+                  <img
+                    src={prep3}
+                    alt="Workshop preparation meeting"
+                    className="w-full h-48 object-cover rounded-lg shadow-md hover:scale-105 transition-transform cursor-pointer"
                   />
                   <img
                     src={prep4}
-                    alt="Team preparing for workshop"
-                    className="w-full h-48 object-cover rounded-lg shadow-md"
+                    alt="Workshop preparation meeting"
+                    className="w-full h-48 object-cover rounded-lg shadow-md hover:scale-105 transition-transform cursor-pointer"
                   />
                   <img
                     src={prep5}
-                    alt="Team preparing for workshop"
-                    className="w-full h-48 object-cover rounded-lg shadow-md"
+                    alt="Workshop preparation meeting"
+                    className="w-full h-48 object-cover rounded-lg shadow-md hover:scale-105 transition-transform cursor-pointer"
                   />
                   <img
                     src={prep6}
-                    alt="Team preparing for workshop"
-                    className="w-full h-48 object-cover rounded-lg shadow-md"
+                    alt="Workshop preparation meeting"
+                    className="w-full h-48 object-cover rounded-lg shadow-md hover:scale-105 transition-transform cursor-pointer"
                   />
                   <img
                     src={prep7}
-                    alt="Team preparing for workshop"
-                    className="w-full h-48 object-cover rounded-lg shadow-md"
+                    alt="Workshop preparation meeting"
+                    className="w-full h-48 object-cover rounded-lg shadow-md hover:scale-105 transition-transform cursor-pointer"
                   />
+                  {/* Poster */}
                   <img
                     src={poster}
-                    alt="Team preparing for workshop"
-                    className="w-full h-48 object-cover rounded-lg shadow-md"
+                    alt="AI/ML Workshop poster"
+                    className="w-full h-48 object-cover rounded-lg shadow-md hover:scale-105 transition-transform cursor-pointer"
+                  />
+                  {/* Workshop day images */}
+                  <img
+                    src={workshopDay1}
+                    alt="AI/ML Workshop session"
+                    className="w-full h-48 object-cover rounded-lg shadow-md hover:scale-105 transition-transform cursor-pointer"
+                  />
+                  <img
+                    src={workshopDay2}
+                    alt="AI/ML Workshop session"
+                    className="w-full h-48 object-cover rounded-lg shadow-md hover:scale-105 transition-transform cursor-pointer"
+                  />
+                  <img
+                    src={workshopDay3}
+                    alt="AI/ML Workshop session"
+                    className="w-full h-48 object-cover rounded-lg shadow-md hover:scale-105 transition-transform cursor-pointer"
+                  />
+                  <img
+                    src={workshopDay4}
+                    alt="AI/ML Workshop session"
+                    className="w-full h-48 object-cover rounded-lg shadow-md hover:scale-105 transition-transform cursor-pointer"
+                  />
+                  <img
+                    src={workshopDay5}
+                    alt="AI/ML Workshop session"
+                    className="w-full h-48 object-cover rounded-lg shadow-md hover:scale-105 transition-transform cursor-pointer"
                   />
                 </div>
               </div>
