@@ -1,8 +1,14 @@
-import React from 'react';
-import PageHeader from '../components/common/PageHeader';
-import Container from '../components/common/Container';
-import Section from '../components/common/Section';
-import { ExternalLink, FileText, Github } from 'lucide-react';
+import React from "react";
+import PageHeader from "../components/common/PageHeader";
+import Container from "../components/common/Container";
+import Section from "../components/common/Section";
+import { ExternalLink, FileText, Github } from "lucide-react";
+import workshopImage from "../assets/BPWorkshop/workshop.jpeg";
+import cultureBilingualImage from "../assets/BPWorkshop/codeinspanish.png";
+import bilingualCodingPdf from "../assets/pdf/Exploring Bilingual Coding for Inclusive.pdf";
+import cultureBilingualPdf from "../assets/pdf/Exploring the Role of Culture and Bilingualism.pdf";
+import k12TeacherMotivationPdf from "../assets/pdf/Exploring K–12 Teacher Motivation.pdf";
+import helloWorldFeaturePdf from "../assets/pdf/HelloWorld28_Ethel.pdf";
 
 interface Project {
   id: number;
@@ -10,7 +16,7 @@ interface Project {
   description: string;
   category: string;
   image: string;
-  status: 'active' | 'completed';
+  status: "active" | "completed";
   website?: string;
   paper?: string;
   code?: string;
@@ -21,146 +27,166 @@ const ResearchPage: React.FC = () => {
   const projects: Project[] = [
     {
       id: 1,
-      title: "NL2Code: Natural Language to Code Generation",
-      description: "This project explores advanced techniques for generating executable code from natural language descriptions. We're developing neural architectures that can understand programming context, maintain consistency across generated functions, and ensure correctness through static analysis integration.",
-      category: "Code Generation",
-      image: "https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      status: "active",
-      paper: "https://example.com/papers/nl2code.pdf",
-      code: "https://github.com/bprl/nl2code",
-      team: ["Dr. Maria Rodriguez", "Dr. Lin Zhang", "Sofia Garcia"]
+      title: "Exploring Bilingual Coding for Inclusive Computer Science Learning",
+      description:
+        "A bilingual programming workshop study investigating how language choice shapes novice confidence, enjoyment, and perceived understanding of programming concepts.",
+      category: "Bilingual Programming",
+      image: workshopImage,
+      status: "completed",
+      website: "https://doi.org/10.1145/3770761.3777339",
+      paper: bilingualCodingPdf,
+      team: [
+        "Ethel Tshukudu",
+        "Neel Asheshbhai Shah",
+        "Thien Khang Kieu",
+        "Leqaa Deeb",
+        "Harshitha Venkateswaran",
+        "Aarav Ghai",
+        "Yusuf Gadelrab",
+        "Purujit Hada",
+      ],
     },
     {
       id: 2,
-      title: "BilDoc: Bilingual Documentation Generation",
-      description: "BilDoc aims to automatically generate high-quality documentation for code by understanding both the code semantics and the natural language context. Our approach uses a bidirectional translation model that can generate documentation from code and predict code structure from documentation.",
-      category: "Documentation",
-      image: "https://images.pexels.com/photos/1089438/pexels-photo-1089438.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      status: "active",
-      website: "https://example.com/bildoc",
-      team: ["Dr. James Chen", "Michael Johnson", "Elena Volkov"]
+      title: "Exploring the Role of Culture and Bilingualism",
+      description:
+        "An exploration of cultural context and bilingualism in computing education, highlighting how language identity influences engagement and learning experiences.",
+      category: "Culture & Identity",
+      image: cultureBilingualImage,
+      status: "completed",
+      paper: cultureBilingualPdf,
+      team: ["CS Education Research Lab"],
     },
     {
       id: 3,
-      title: "CodeSwitch: Understanding Bilingual Programming Patterns",
-      description: "This research analyzes how developers naturally switch between natural language and programming language in their workflow. Through large-scale corpus analysis of code repositories, comments, and documentation, we're identifying patterns that can inform the design of more intuitive programming tools.",
-      category: "Programming Behavior",
-      image: "https://images.pexels.com/photos/7988086/pexels-photo-7988086.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      status: "active",
-      paper: "https://example.com/papers/codeswitch.pdf",
-      team: ["Dr. Aisha Patel", "Michael Johnson", "David Kim"]
+      title: "Exploring K–12 Teacher Motivation to Engage with AI in Education",
+      description:
+        "A mixed-methods study of K–12 teachers' motivation to use AI/ML, examining intrinsic drivers and infrastructural constraints in resource-limited settings.",
+      category: "AI/ML Education",
+      image: "",
+      status: "completed",
+      website: "https://doi.org/10.1145/3770762.3772632",
+      paper: k12TeacherMotivationPdf,
+      team: [
+        "Ethel Tshukudu",
+        "Katharine Childs",
+        "Gaokgakala Alogeng",
+        "Emma R. Dodoo",
+        "Douglas R. Case",
+        "Tebogo Videlmah Molebatsi",
+      ],
     },
     {
       id: 4,
-      title: "LangBridge: Cross-Language Program Migration",
-      description: "LangBridge develops techniques for translating code between programming languages while preserving semantics and idiomaticity. Our approach uses natural language as an intermediate representation, enabling more accurate translations than direct syntax mapping.",
-      category: "Code Translation",
-      image: "https://images.pexels.com/photos/879109/pexels-photo-879109.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      status: "active",
-      team: ["Dr. Maria Rodriguez", "Elena Volkov"]
-    },
-    {
-      id: 5,
-      title: "BIDE: Bilingual Integrated Development Environment",
-      description: "BIDE is a prototype IDE that integrates natural language understanding deeply into the programming workflow. It features intelligent code completion, natural language query capabilities, and automatic documentation generation based on code-language understanding.",
-      category: "Development Tools",
-      image: "https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      status: "active",
-      website: "https://example.com/bide",
-      code: "https://github.com/bprl/bide",
-      team: ["Dr. James Chen", "David Kim", "Sofia Garcia"]
-    },
-    {
-      id: 6,
-      title: "NL-Test: Generating Test Cases from Natural Language",
-      description: "This completed project explored techniques for automatically generating test cases from natural language specifications. We developed a system that can create comprehensive test suites that verify both functional correctness and edge cases based on requirements described in natural language.",
-      category: "Testing",
-      image: "https://images.pexels.com/photos/7988133/pexels-photo-7988133.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      title:
+        "What Programming Language Transfer Teaches Us About Helping Students Transition",
+      description:
+        "Magazine feature highlighting Dr. Ethel Tshukudu's research on conceptual transfer, outlining how educators can support students moving from blocks to text and across programming languages.",
+      category: "Conceptual Transfer",
+      image: workshopImage,
       status: "completed",
-      paper: "https://example.com/papers/nl-test.pdf",
-      code: "https://github.com/bprl/nl-test",
-      team: ["Dr. Aisha Patel", "Dr. Lin Zhang"]
-    }
+      website: "https://helloworld.cc/conceptual-transfer-programming",
+      paper: helloWorldFeaturePdf,
+      team: ["Ethel Tshukudu"],
+    },
+    
   ];
 
-  const categories = Array.from(new Set(projects.map(p => p.category)));
+  const categories = Array.from(new Set(projects.map((p) => p.category)));
 
   return (
     <div className="animate-fade-in">
-      <PageHeader 
-        title="Research" 
+      <PageHeader
+        title="Research"
         subtitle="Exploring the intersection of natural language and programming languages"
       />
-      
+
       <Container className="py-12">
         <Section title="Research Areas" className="mb-12">
           <div className="max-w-4xl mx-auto">
             <p className="text-gray-600 mb-8 leading-relaxed">
-              Our lab focuses on the frontier where natural language meets programming languages. 
-              We believe that the next generation of programming tools will leverage the strengths 
-              of both linguistic systems, making software development more intuitive, accessible, 
-              and powerful.
+              Our research focuses on CS education experiences that lower
+              barriers for learners, with an emphasis on bilingual programming
+              contexts and introductory AI/ML learning. We study how students
+              build confidence, transfer knowledge, and engage with data-driven
+              concepts through accessible, hands-on workshops.
             </p>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="bg-sjsu-lightgray rounded-lg p-6">
-                <h3 className="text-xl font-bold text-sjsu-navy mb-3">Code Generation and Synthesis</h3>
+                <h3 className="text-xl font-bold text-sjsu-navy mb-3">
+                  Introductory AI/ML Learning
+                </h3>
                 <p className="text-gray-600">
-                  Research on techniques for automatically generating code from natural language specifications, 
-                  ranging from simple code snippets to complex program structures.
+                  Designing and evaluating beginner-friendly AI/ML workshops
+                  that connect imperative programming knowledge to data-driven
+                  workflows through concrete, guided activities.
                 </p>
               </div>
-              
+
               <div className="bg-sjsu-lightgray rounded-lg p-6">
-                <h3 className="text-xl font-bold text-sjsu-navy mb-3">Documentation and Explanation</h3>
+                <h3 className="text-xl font-bold text-sjsu-navy mb-3">
+                  Bilingual Programming Experiences
+                </h3>
                 <p className="text-gray-600">
-                  Developing methods for automatically generating natural language explanations of code and 
-                  improving the quality and maintainability of technical documentation.
+                  Investigating how language, culture, and identity shape
+                  student attitudes and experiences in bilingual coding
+                  workshops.
                 </p>
               </div>
-              
+
               <div className="bg-sjsu-lightgray rounded-lg p-6">
-                <h3 className="text-xl font-bold text-sjsu-navy mb-3">Intelligent Programming Environments</h3>
+                <h3 className="text-xl font-bold text-sjsu-navy mb-3">
+                  Conceptual Transfer and Analogies
+                </h3>
                 <p className="text-gray-600">
-                  Building next-generation IDEs and tools that deeply integrate natural language understanding 
-                  with traditional programming interfaces.
+                  Studying how analogies and explicit bridges from prior CS
+                  knowledge support the transition from rule-based to
+                  data-driven reasoning.
                 </p>
               </div>
-              
+
               <div className="bg-sjsu-lightgray rounded-lg p-6">
-                <h3 className="text-xl font-bold text-sjsu-navy mb-3">Programming Education</h3>
+                <h3 className="text-xl font-bold text-sjsu-navy mb-3">
+                  Broadening Participation
+                </h3>
                 <p className="text-gray-600">
-                  Exploring how bilingual programming approaches can improve learning outcomes for novice 
-                  programmers and make coding more accessible to diverse populations.
+                  Creating inclusive learning experiences that reduce barriers
+                  to entry and improve confidence for diverse learners in CS.
                 </p>
               </div>
             </div>
           </div>
         </Section>
-        
+
         <Section title="Current and Past Projects">
           <div className="space-y-4 mb-8">
             <div className="flex flex-wrap gap-2">
-              <span className="font-semibold text-sjsu-navy">Filter by category:</span>
-              {categories.map(category => (
-                <span key={category} className="px-3 py-1 bg-sjsu-lightgray rounded-full text-sm font-medium text-sjsu-blue cursor-pointer hover:bg-sjsu-gold hover:text-sjsu-navy transition-colors">
+              <span className="font-semibold text-sjsu-navy">
+                Filter by category:
+              </span>
+              {categories.map((category) => (
+                <span
+                  key={category}
+                  className="px-3 py-1 bg-sjsu-lightgray rounded-full text-sm font-medium text-sjsu-blue cursor-pointer hover:bg-sjsu-gold hover:text-sjsu-navy transition-colors"
+                >
                   {category}
                 </span>
               ))}
             </div>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {projects.map((project) => (
-              <div 
-                key={project.id} 
+              <div
+                key={project.id}
                 className={`bg-white rounded-lg shadow-md overflow-hidden transition-all hover:shadow-lg ${
-                  project.status === 'completed' ? 'opacity-80' : ''
+                  project.status === "completed" ? "opacity-80" : ""
                 }`}
               >
-                <img 
-                  src={project.image} 
-                  alt={project.title} 
+                <img
+                  src={project.image}
+                  alt={project.title}
                   className="w-full h-48 object-cover"
                 />
                 <div className="p-6">
@@ -168,28 +194,38 @@ const ResearchPage: React.FC = () => {
                     <span className="px-3 py-1 bg-sjsu-lightgray rounded-full text-xs font-medium text-sjsu-blue">
                       {project.category}
                     </span>
-                    <span className={`px-3 py-1 rounded-full text-xs font-medium ${
-                      project.status === 'active' 
-                        ? 'bg-green-100 text-green-800' 
-                        : 'bg-gray-100 text-gray-800'
-                    }`}>
-                      {project.status === 'active' ? 'Active' : 'Completed'}
+                    <span
+                      className={`px-3 py-1 rounded-full text-xs font-medium ${
+                        project.status === "active"
+                          ? "bg-green-100 text-green-800"
+                          : "bg-gray-100 text-gray-800"
+                      }`}
+                    >
+                      {project.status === "active" ? "Active" : "Completed"}
                     </span>
                   </div>
-                  
-                  <h3 className="text-xl font-bold text-sjsu-navy mb-2">{project.title}</h3>
-                  <p className="text-gray-600 mb-4 text-sm">{project.description}</p>
-                  
+
+                  <h3 className="text-xl font-bold text-sjsu-navy mb-2">
+                    {project.title}
+                  </h3>
+                  <p className="text-gray-600 mb-4 text-sm">
+                    {project.description}
+                  </p>
+
                   <div className="mb-4">
-                    <h4 className="text-sm font-semibold text-sjsu-navy mb-1">Research Team:</h4>
-                    <p className="text-sm text-gray-600">{project.team.join(', ')}</p>
+                    <h4 className="text-sm font-semibold text-sjsu-navy mb-1">
+                      Research Team:
+                    </h4>
+                    <p className="text-sm text-gray-600">
+                      {project.team.join(", ")}
+                    </p>
                   </div>
-                  
+
                   <div className="flex space-x-4 mt-4">
                     {project.website && (
-                      <a 
-                        href={project.website} 
-                        target="_blank" 
+                      <a
+                        href={project.website}
+                        target="_blank"
                         rel="noopener noreferrer"
                         className="flex items-center text-sm text-sjsu-blue hover:text-sjsu-gold transition-colors"
                       >
@@ -198,9 +234,9 @@ const ResearchPage: React.FC = () => {
                       </a>
                     )}
                     {project.paper && (
-                      <a 
-                        href={project.paper} 
-                        target="_blank" 
+                      <a
+                        href={project.paper}
+                        target="_blank"
                         rel="noopener noreferrer"
                         className="flex items-center text-sm text-sjsu-blue hover:text-sjsu-gold transition-colors"
                       >
@@ -209,9 +245,9 @@ const ResearchPage: React.FC = () => {
                       </a>
                     )}
                     {project.code && (
-                      <a 
-                        href={project.code} 
-                        target="_blank" 
+                      <a
+                        href={project.code}
+                        target="_blank"
                         rel="noopener noreferrer"
                         className="flex items-center text-sm text-sjsu-blue hover:text-sjsu-gold transition-colors"
                       >
