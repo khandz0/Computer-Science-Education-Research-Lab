@@ -16,6 +16,7 @@ import PurujitProfile from "../assets/profiles/PurujitProfile.JPG";
 import ShishirProfile from "../assets/profiles/shishir.jpeg";
 import DuyProfile from "../assets/profiles/duyprofile.jpg";
 import AyushProfile from "../assets/profiles/ayushprofile.jpg";
+import KianaProfile from "../assets/profiles/KianaProfile.jpg";
 
 interface Person {
   id: number;
@@ -137,6 +138,16 @@ const PeoplePage: React.FC = () => {
       linkedin: "https://www.linkedin.com/in/ayushgmahajan/",
       github: "AyushMahajan06",
     },
+    {
+      id: 13,
+      name: "Kiana Sarkis",
+      title: "Student Researcher",
+      category: "undergrad",
+      bio: "Kiana is an undergraduate student at San José State University with a strong interest in data analysis, machine learning, and educational technology for inclusive learning.",
+      image: KianaProfile,
+      email: "ksarkis.323@gmail.com",
+      linkedin: "",
+    },
   ];
 
   const pastResearchers: Person[] = [
@@ -179,7 +190,7 @@ const PeoplePage: React.FC = () => {
       <Container className="py-12">
         {categories.map((category) => {
           const categoryPeople = people.filter(
-            (person) => person.category === category.id
+            (person) => person.category === category.id,
           );
 
           if (categoryPeople.length === 0) return null;
