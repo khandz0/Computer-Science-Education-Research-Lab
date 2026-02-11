@@ -17,6 +17,7 @@ import ShishirProfile from "../assets/profiles/shishir.jpeg";
 import DuyProfile from "../assets/profiles/duyprofile.jpg";
 import AyushProfile from "../assets/profiles/ayushprofile.jpg";
 import KianaProfile from "../assets/profiles/KianaProfile.jpg";
+import SunnyProfile from "../assets/profiles/SunnyProfile.jpg";
 
 interface Person {
   id: number;
@@ -147,6 +148,17 @@ const PeoplePage: React.FC = () => {
       image: KianaProfile,
       email: "ksarkis.323@gmail.com",
       linkedin: "",
+    },
+    {
+      id: 14,
+      name: "Sunny Doan",
+      title: "Student Researcher",
+      category: "undergrad",
+      bio: "I am an undergraduate student at San José State University who wants to learn the effects of Artificial Intelligence use in education.",
+      image: SunnyProfile,
+      email: "sunnydoan777@gmail.com",
+      linkedin: "https://www.linkedin.com/in/sunny-doan/",
+      github: "flabbhs",
     },
   ];
 
