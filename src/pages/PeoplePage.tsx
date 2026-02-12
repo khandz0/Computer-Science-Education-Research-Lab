@@ -18,6 +18,7 @@ import DuyProfile from "../assets/profiles/duyprofile.jpg";
 import AyushProfile from "../assets/profiles/ayushprofile.jpg";
 import KianaProfile from "../assets/profiles/KianaProfile.jpg";
 import SunnyProfile from "../assets/profiles/SunnyProfile.jpg";
+import AniaProfile from "../assets/profiles/AniaProfile.jpg";
 
 interface Person {
   id: number;
@@ -159,6 +160,17 @@ const PeoplePage: React.FC = () => {
       email: "sunnydoan777@gmail.com",
       linkedin: "https://www.linkedin.com/in/sunny-doan/",
       github: "flabbhs",
+    },
+    {
+      id: 15,
+      name: "Ania Niedzialek",
+      title: "Student Researcher",
+      category: "undergrad",
+      bio: "Ania is an undergraduate computer science student at San José State University who loves making tech more inclusive and accessible. She’s passionate about exploring how AI and innovative bioengineering solutions can be used to create positive impact in real-world contexts.",
+      image: AniaProfile,
+      email: "aniedz0410@gmail.com",
+      linkedin: "https://www.linkedin.com/in/akniedzialek/",
+      github: "AniaNiedzialek",
     },
   ];
 
