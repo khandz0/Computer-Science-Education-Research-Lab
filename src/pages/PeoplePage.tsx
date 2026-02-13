@@ -19,6 +19,7 @@ import AyushProfile from "../assets/profiles/ayushprofile.jpg";
 import KianaProfile from "../assets/profiles/KianaProfile.jpg";
 import SunnyProfile from "../assets/profiles/SunnyProfile.jpg";
 import AniaProfile from "../assets/profiles/AniaProfile.jpg";
+import TylerProfile from "../assets/profiles/TylerProfile.png";
 
 interface Person {
   id: number;
@@ -171,6 +172,17 @@ const PeoplePage: React.FC = () => {
       email: "aniedz0410@gmail.com",
       linkedin: "https://www.linkedin.com/in/akniedzialek/",
       github: "AniaNiedzialek",
+    },
+    {
+      id: 16,
+      name: "Tyler Moquin",
+      title: "Student Researcher",
+      category: "undergrad",
+      bio: "Tyler is an undergraduate student at San José State University with a strong interest in software development, machine learning, and computer science education. He enjoys building practical systems and exploring how computing can support inclusive learning.",
+      image: TylerProfile,
+      email: "tyler.moquin@sjsu.edu",
+      linkedin: "https://www.linkedin.com/in/tyler-moquin-478356214/",
+      github: "plusplusminusminus",
     },
   ];
 
