@@ -1,11 +1,12 @@
 import React, { useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import * as pdfjsLib from "pdfjs-dist";
-import pdfWorker from "pdfjs-dist/build/pdf.worker.min.mjs?url";
 import { X, Expand } from "lucide-react";
 
+// Use CDN worker so hosting (e.g. Hostinger) doesn't need to serve .mjs
+const PDFJS_WORKER_VERSION = "5.5.207";
 if (typeof window !== "undefined") {
-  pdfjsLib.GlobalWorkerOptions.workerSrc = pdfWorker;
+  pdfjsLib.GlobalWorkerOptions.workerSrc = `https://unpkg.com/pdfjs-dist@${PDFJS_WORKER_VERSION}/build/pdf.worker.min.mjs`;
 }
 
 interface PdfFirstPageImageProps {
