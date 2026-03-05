@@ -2,9 +2,8 @@ import React from "react";
 import PageHeader from "../components/common/PageHeader";
 import Container from "../components/common/Container";
 import Section from "../components/common/Section";
+import PdfFirstPageImage from "../components/common/PdfFirstPageImage";
 import { ExternalLink, FileText, Github } from "lucide-react";
-import workshopImage from "../assets/BPWorkshop/workshop.jpeg";
-import cultureBilingualImage from "../assets/BPWorkshop/codeinspanish.png";
 import bilingualCodingPdf from "../assets/pdf/Exploring Bilingual Coding for Inclusive.pdf";
 import cultureBilingualPdf from "../assets/pdf/Exploring the Role of Culture and Bilingualism.pdf";
 import k12TeacherMotivationPdf from "../assets/pdf/Exploring K–12 Teacher Motivation.pdf";
@@ -15,7 +14,7 @@ interface Project {
   title: string;
   description: string;
   category: string;
-  image: string;
+  image?: string;
   status: "active" | "completed";
   website?: string;
   paper?: string;
@@ -31,7 +30,6 @@ const ResearchPage: React.FC = () => {
       description:
         "A bilingual programming workshop study investigating how language choice shapes novice confidence, enjoyment, and perceived understanding of programming concepts.",
       category: "Bilingual Programming",
-      image: workshopImage,
       status: "completed",
       website: "https://doi.org/10.1145/3770761.3777339",
       paper: bilingualCodingPdf,
@@ -52,7 +50,6 @@ const ResearchPage: React.FC = () => {
       description:
         "An exploration of cultural context and bilingualism in computing education, highlighting how language identity influences engagement and learning experiences.",
       category: "Culture & Identity",
-      image: cultureBilingualImage,
       status: "completed",
       paper: cultureBilingualPdf,
       team: ["CS Education Research Lab"],
@@ -63,7 +60,6 @@ const ResearchPage: React.FC = () => {
       description:
         "A mixed-methods study of K–12 teachers' motivation to use AI/ML, examining intrinsic drivers and infrastructural constraints in resource-limited settings.",
       category: "AI/ML Education",
-      image: "",
       status: "completed",
       website: "https://doi.org/10.1145/3770762.3772632",
       paper: k12TeacherMotivationPdf,
@@ -83,7 +79,6 @@ const ResearchPage: React.FC = () => {
       description:
         "Magazine feature highlighting Dr. Ethel Tshukudu's research on conceptual transfer, outlining how educators can support students moving from blocks to text and across programming languages.",
       category: "Conceptual Transfer",
-      image: workshopImage,
       status: "completed",
       website: "https://helloworld.cc/conceptual-transfer-programming",
       paper: helloWorldFeaturePdf,
@@ -184,11 +179,23 @@ const ResearchPage: React.FC = () => {
                   project.status === "completed" ? "opacity-80" : ""
                 }`}
               >
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-48 object-cover"
-                />
+                {project.paper ? (
+                  <PdfFirstPageImage
+                    pdfUrl={project.paper}
+                    alt={project.title}
+                    className="w-full h-48 object-cover"
+                  />
+                ) : project.image ? (
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-48 object-cover"
+                  />
+                ) : (
+                  <div className="w-full h-48 bg-sjsu-lightgray flex items-center justify-center text-gray-500 text-sm">
+                    No preview
+                  </div>
+                )}
                 <div className="p-6">
                   <div className="flex items-center justify-between mb-3">
                     <span className="px-3 py-1 bg-sjsu-lightgray rounded-full text-xs font-medium text-sjsu-blue">
